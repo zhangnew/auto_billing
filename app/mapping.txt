@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 2.1.86
 # min_api: 24
-# pg_map_id: 88b1795
+# pg_map_id: 14c4def
 # common_typos_disable
 $$ServiceLoaderMethods -> a:
     java.util.Iterator $load$41606() -> a
@@ -45861,17 +45861,17 @@ cn.dreamn.qianji_auto.ui.activity.MainActivity -> cn.dreamn.qianji_auto.ui.activ
 cn.dreamn.qianji_auto.ui.adapter.-$$Lambda$CateItemListAdapter$qd6XLz_7dqrBM6i3eycsHGjyviQ -> d.a.a.g.a.a:
     android.os.Bundle f$1 -> f
     cn.dreamn.qianji_auto.ui.adapter.CateItemListAdapter f$0 -> e
-cn.dreamn.qianji_auto.ui.adapter.-$$Lambda$CategoryAdapter$WZaTWxYSp1Xgdv1WBtJoajBewus -> d.a.a.g.a.b:
-    android.os.Handler f$0 -> a
-    void onGet(android.os.Bundle[]) -> a
-cn.dreamn.qianji_auto.ui.adapter.-$$Lambda$CategoryAdapter$pcRnYh99vymm_rLP_KqbceW1gBM -> d.a.a.g.a.c:
+cn.dreamn.qianji_auto.ui.adapter.-$$Lambda$CategoryAdapter$DW7MnczxeFg5uKtRZeLvMiHX10U -> d.a.a.g.a.b:
     java.util.List f$1 -> b
-    int[] f$3 -> d
+    int[] f$2 -> c
     android.os.Bundle f$4 -> e
-    cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter f$2 -> c
     int f$5 -> f
+    cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter f$3 -> d
     cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter f$0 -> a
     void onItemClick(android.view.View,int) -> a
+cn.dreamn.qianji_auto.ui.adapter.-$$Lambda$CategoryAdapter$WZaTWxYSp1Xgdv1WBtJoajBewus -> d.a.a.g.a.c:
+    android.os.Handler f$0 -> a
+    void onGet(android.os.Bundle[]) -> a
 cn.dreamn.qianji_auto.ui.adapter.-$$Lambda$MapListAdapter$pDUmiIZjPvwBeUc9dZH9FwvSCmw -> d.a.a.g.a.d:
     cn.dreamn.qianji_auto.utils.pictures.MyBitmapUtils f$0 -> a
     android.widget.ImageView f$1 -> b
@@ -45945,44 +45945,43 @@ cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter -> cn.dreamn.qianji_auto.ui.ada
     android.content.Context mContext -> l
     java.lang.Boolean allow -> m
     cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$Item itemListen -> o
-    1:1:void <init>(android.content.Context,java.lang.Boolean):42:42 -> <init>
-    2:2:void <init>(android.content.Context,java.lang.Boolean):36:36 -> <init>
-    3:4:void <init>(android.content.Context,java.lang.Boolean):43:44 -> <init>
-    1:1:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,java.lang.Object,int):31:31 -> h
-    1:2:com.scwang.smartrefresh.layout.adapter.SmartRecyclerAdapter refresh(java.util.Collection):50:51 -> k
-    1:10:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):57:66 -> p
-    11:11:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):69:69 -> p
-    12:14:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):76:78 -> p
-    15:15:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):81:81 -> p
-    16:16:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):102:102 -> p
-    17:17:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):113:113 -> p
-    18:19:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):115:116 -> p
-    20:20:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):118:118 -> p
-    1:1:android.content.Context access$000(cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter):31:31 -> q
-    1:8:void doItem(android.os.Bundle,com.scwang.smartrefresh.layout.adapter.SmartViewHolder,int):147:154 -> r
-    9:12:void doItem(android.os.Bundle,com.scwang.smartrefresh.layout.adapter.SmartViewHolder,int):156:159 -> r
-    1:2:void lambda$doItem$1(java.util.List,cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,int[],android.os.Bundle,int,android.view.View,int):160:161 -> s
-    3:3:void lambda$doItem$1(java.util.List,cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,int[],android.os.Bundle,int,android.view.View,int):163:163 -> s
-    4:9:void lambda$doItem$1(java.util.List,cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,int[],android.os.Bundle,int,android.view.View,int):165:170 -> s
-    10:12:void lambda$doItem$1(java.util.List,cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,int[],android.os.Bundle,int,android.view.View,int):173:175 -> s
-    void lambda$doItem$1$CategoryAdapter(java.util.List,cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,int[],android.os.Bundle,int,android.view.View,int) -> t
-    1:4:void lambda$onBindViewHolder$0(android.os.Handler,android.os.Bundle[]):104:107 -> u
-    5:5:void lambda$onBindViewHolder$0(android.os.Handler,android.os.Bundle[]):109:109 -> u
-    6:6:void lambda$onBindViewHolder$0(android.os.Handler,android.os.Bundle[]):111:111 -> u
-    1:5:void setColor(boolean,com.shehuan.niv.NiceImageView,android.widget.ImageView,android.widget.TextView):126:130 -> v
-    6:10:void setColor(boolean,com.shehuan.niv.NiceImageView,android.widget.ImageView,android.widget.TextView):132:136 -> v
-    1:1:void setOnItemListener(cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$Item):184:184 -> w
-    1:1:void setSelect(int):141:141 -> x
+    1:1:void <init>(android.content.Context,java.lang.Boolean):43:43 -> <init>
+    2:2:void <init>(android.content.Context,java.lang.Boolean):37:37 -> <init>
+    3:4:void <init>(android.content.Context,java.lang.Boolean):44:45 -> <init>
+    1:1:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,java.lang.Object,int):32:32 -> h
+    1:2:com.scwang.smartrefresh.layout.adapter.SmartRecyclerAdapter refresh(java.util.Collection):51:52 -> k
+    1:10:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):58:67 -> p
+    11:11:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):70:70 -> p
+    12:14:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):77:79 -> p
+    15:15:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):82:82 -> p
+    16:16:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):103:103 -> p
+    17:17:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):114:114 -> p
+    18:19:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):116:117 -> p
+    20:20:void onBindViewHolder(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,android.os.Bundle,int):119:119 -> p
+    1:1:android.content.Context access$000(cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter):32:32 -> q
+    1:8:void doItem(android.os.Bundle,com.scwang.smartrefresh.layout.adapter.SmartViewHolder,int):148:155 -> r
+    9:12:void doItem(android.os.Bundle,com.scwang.smartrefresh.layout.adapter.SmartViewHolder,int):157:160 -> r
+    1:5:void lambda$doItem$1(java.util.List,int[],cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,android.os.Bundle,int,android.view.View,int):161:165 -> s
+    6:11:void lambda$doItem$1(java.util.List,int[],cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,android.os.Bundle,int,android.view.View,int):167:172 -> s
+    12:14:void lambda$doItem$1(java.util.List,int[],cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,android.os.Bundle,int,android.view.View,int):175:177 -> s
+    void lambda$doItem$1$CategoryAdapter(java.util.List,int[],cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter,android.os.Bundle,int,android.view.View,int) -> t
+    1:4:void lambda$onBindViewHolder$0(android.os.Handler,android.os.Bundle[]):105:108 -> u
+    5:5:void lambda$onBindViewHolder$0(android.os.Handler,android.os.Bundle[]):110:110 -> u
+    6:6:void lambda$onBindViewHolder$0(android.os.Handler,android.os.Bundle[]):112:112 -> u
+    1:5:void setColor(boolean,com.shehuan.niv.NiceImageView,android.widget.ImageView,android.widget.TextView):127:131 -> v
+    6:10:void setColor(boolean,com.shehuan.niv.NiceImageView,android.widget.ImageView,android.widget.TextView):133:137 -> v
+    1:1:void setOnItemListener(cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$Item):186:186 -> w
+    1:1:void setSelect(int):142:142 -> x
 cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$1 -> cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$a:
     android.os.Bundle val$item -> c
     android.widget.ImageView val$iv_more -> a
     com.shehuan.niv.NiceImageView val$item_image_icon -> b
     cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter this$0 -> d
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter,android.os.Looper,android.widget.ImageView,com.shehuan.niv.NiceImageView,android.os.Bundle):81:81 -> <init>
-    1:3:void handleMessage(android.os.Message):84:86 -> handleMessage
-    4:4:void handleMessage(android.os.Message):88:88 -> handleMessage
-    5:5:void handleMessage(android.os.Message):91:91 -> handleMessage
-    6:8:void handleMessage(android.os.Message):93:95 -> handleMessage
+    1:1:void <init>(cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter,android.os.Looper,android.widget.ImageView,com.shehuan.niv.NiceImageView,android.os.Bundle):82:82 -> <init>
+    1:3:void handleMessage(android.os.Message):85:87 -> handleMessage
+    4:4:void handleMessage(android.os.Message):89:89 -> handleMessage
+    5:5:void handleMessage(android.os.Message):92:92 -> handleMessage
+    6:8:void handleMessage(android.os.Message):94:96 -> handleMessage
 cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$Item -> cn.dreamn.qianji_auto.ui.adapter.CategoryAdapter$b:
     void onClick(android.os.Bundle,android.os.Bundle,int) -> a
 cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter -> cn.dreamn.qianji_auto.ui.adapter.CategoryItemAdapter:
@@ -47696,24 +47695,24 @@ cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment -> cn.dreamn.qianji_a
     cn.dreamn.qianji_auto.ui.utils.CategoryUtils categoryUtils -> k
     android.os.Bundle book -> l
     1:1:void <init>(android.os.Bundle,java.lang.String):86:86 -> <init>
-    2:2:void <init>(android.os.Bundle,java.lang.String):320:320 -> <init>
+    2:2:void <init>(android.os.Bundle,java.lang.String):321:321 -> <init>
     3:4:void <init>(android.os.Bundle,java.lang.String):87:88 -> <init>
     1:1:void access$000(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment,android.os.Bundle,int):55:55 -> G
     1:1:void access$100(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment,android.os.Bundle,java.lang.String,int):55:55 -> H
     1:1:void access$200(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment,java.lang.String,int):55:55 -> I
-    1:3:void change(android.os.Bundle,java.lang.String,int):257:259 -> J
-    4:4:void change(android.os.Bundle,java.lang.String,int):280:280 -> J
-    1:2:void del(android.os.Bundle,int):284:285 -> K
-    3:10:void del(android.os.Bundle,int):287:294 -> K
-    11:11:void del(android.os.Bundle,int):300:300 -> K
-    12:12:void del(android.os.Bundle,int):304:304 -> K
-    13:14:void del(android.os.Bundle,int):306:307 -> K
+    1:3:void change(android.os.Bundle,java.lang.String,int):258:260 -> J
+    4:4:void change(android.os.Bundle,java.lang.String,int):281:281 -> J
+    1:2:void del(android.os.Bundle,int):285:286 -> K
+    3:10:void del(android.os.Bundle,int):288:295 -> K
+    11:11:void del(android.os.Bundle,int):301:301 -> K
+    12:12:void del(android.os.Bundle,int):305:305 -> K
+    13:14:void del(android.os.Bundle,int):307:308 -> K
     1:4:void initLayout():184:187 -> L
-    1:1:kotlin.Unit lambda$change$8(android.os.Bundle,int,com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence):262:262 -> M
+    1:1:kotlin.Unit lambda$change$8(android.os.Bundle,int,com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence):263:263 -> M
     kotlin.Unit lambda$change$8$sortsFragment(android.os.Bundle,int,com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence) -> N
     kotlin.Unit lambda$del$10(com.afollestad.materialdialogs.MaterialDialog) -> O
-    1:1:kotlin.Unit lambda$del$9(android.os.Bundle,android.os.Message,com.afollestad.materialdialogs.MaterialDialog):295:295 -> P
-    2:2:kotlin.Unit lambda$del$9(android.os.Bundle,android.os.Message,com.afollestad.materialdialogs.MaterialDialog):297:297 -> P
+    1:1:kotlin.Unit lambda$del$9(android.os.Bundle,android.os.Message,com.afollestad.materialdialogs.MaterialDialog):296:296 -> P
+    2:2:kotlin.Unit lambda$del$9(android.os.Bundle,android.os.Message,com.afollestad.materialdialogs.MaterialDialog):298:298 -> P
     kotlin.Unit lambda$del$9$sortsFragment(android.os.Bundle,android.os.Message,com.afollestad.materialdialogs.MaterialDialog) -> Q
     1:1:void lambda$initListeners$3(android.view.View):138:138 -> R
     void lambda$initListeners$3$sortsFragment(android.view.View) -> S
@@ -47731,18 +47730,18 @@ cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment -> cn.dreamn.qianji_a
     void lambda$null$4$sortsFragment(boolean) -> a0
     1:1:kotlin.Unit lambda$null$5(com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence):152:152 -> b0
     kotlin.Unit lambda$null$5$sortsFragment(com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence) -> c0
-    1:2:void lambda$null$7(int,boolean):263:264 -> d0
-    3:5:void lambda$null$7(int,boolean):267:269 -> d0
-    6:8:void lambda$null$7(int,boolean):271:273 -> d0
-    9:9:void lambda$null$7(int,boolean):275:275 -> d0
+    1:2:void lambda$null$7(int,boolean):264:265 -> d0
+    3:5:void lambda$null$7(int,boolean):268:270 -> d0
+    6:8:void lambda$null$7(int,boolean):272:274 -> d0
+    9:9:void lambda$null$7(int,boolean):276:276 -> d0
     int getLayoutId() -> e
     void lambda$null$7$sortsFragment(int,boolean) -> e0
-    1:1:void lambda$refreshData$11(int):312:312 -> f0
+    1:1:void lambda$refreshData$11(int):313:313 -> f0
     void lambda$refreshData$11$sortsFragment(int) -> g0
-    1:1:void lambda$refreshData$12(int):316:316 -> h0
+    1:1:void lambda$refreshData$12(int):317:317 -> h0
     void lambda$refreshData$12$sortsFragment(int) -> i0
-    1:1:void refreshData():316:316 -> j0
-    1:1:void refreshData(java.lang.String,int):312:312 -> k0
+    1:1:void refreshData():317:317 -> j0
+    1:1:void refreshData(java.lang.String,int):313:313 -> k0
     1:3:void setBook(android.os.Bundle):96:98 -> l0
     1:1:void initListeners():124:124 -> m
     2:2:void initListeners():135:135 -> m
@@ -47760,40 +47759,41 @@ cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment$1 -> cn.dreamn.qianji
 cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment$2 -> cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment$b:
     cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment):187:187 -> <init>
-    1:3:void onParentLongClick(android.os.Bundle,int):240:242 -> a
-    4:4:void onParentLongClick(android.os.Bundle,int):249:249 -> a
+    1:3:void onParentLongClick(android.os.Bundle,int):241:243 -> a
+    4:4:void onParentLongClick(android.os.Bundle,int):250:250 -> a
     void onParentClick(android.os.Bundle,int) -> b
-    1:6:void onItemClick(android.os.Bundle,android.os.Bundle,int):195:200 -> c
-    7:7:void onItemClick(android.os.Bundle,android.os.Bundle,int):222:222 -> c
-    8:10:void onItemClick(android.os.Bundle,android.os.Bundle,int):225:227 -> c
-    11:11:void onItemClick(android.os.Bundle,android.os.Bundle,int):234:234 -> c
-    1:2:void lambda$null$0(int,boolean):204:205 -> d
-    3:5:void lambda$null$0(int,boolean):208:210 -> d
-    6:8:void lambda$null$0(int,boolean):212:214 -> d
-    9:9:void lambda$null$0(int,boolean):216:216 -> d
+    1:5:void onItemClick(android.os.Bundle,android.os.Bundle,int):195:199 -> c
+    6:6:void onItemClick(android.os.Bundle,android.os.Bundle,int):201:201 -> c
+    7:7:void onItemClick(android.os.Bundle,android.os.Bundle,int):223:223 -> c
+    8:10:void onItemClick(android.os.Bundle,android.os.Bundle,int):226:228 -> c
+    11:11:void onItemClick(android.os.Bundle,android.os.Bundle,int):235:235 -> c
+    1:2:void lambda$null$0(int,boolean):205:206 -> d
+    3:5:void lambda$null$0(int,boolean):209:211 -> d
+    6:8:void lambda$null$0(int,boolean):213:215 -> d
+    9:9:void lambda$null$0(int,boolean):217:217 -> d
     void lambda$null$0$sortsFragment$2(int,boolean) -> e
-    1:1:kotlin.Unit lambda$onItemClick$1(android.os.Bundle,int,com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence):203:203 -> f
+    1:1:kotlin.Unit lambda$onItemClick$1(android.os.Bundle,int,com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence):204:204 -> f
     kotlin.Unit lambda$onItemClick$1$sortsFragment$2(android.os.Bundle,int,com.afollestad.materialdialogs.MaterialDialog,java.lang.CharSequence) -> g
-    1:1:kotlin.Unit lambda$onItemClick$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):228:228 -> h
-    2:2:kotlin.Unit lambda$onItemClick$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):230:230 -> h
-    3:3:kotlin.Unit lambda$onItemClick$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):229:229 -> h
+    1:1:kotlin.Unit lambda$onItemClick$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):229:229 -> h
+    2:2:kotlin.Unit lambda$onItemClick$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):231:231 -> h
+    3:3:kotlin.Unit lambda$onItemClick$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):230:230 -> h
     kotlin.Unit lambda$onItemClick$2$sortsFragment$2(android.os.Bundle,int,android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence) -> i
-    1:1:kotlin.Unit lambda$onParentLongClick$3(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):243:243 -> j
-    2:2:kotlin.Unit lambda$onParentLongClick$3(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):245:245 -> j
-    3:3:kotlin.Unit lambda$onParentLongClick$3(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):244:244 -> j
+    1:1:kotlin.Unit lambda$onParentLongClick$3(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):244:244 -> j
+    2:2:kotlin.Unit lambda$onParentLongClick$3(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):246:246 -> j
+    3:3:kotlin.Unit lambda$onParentLongClick$3(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):245:245 -> j
     kotlin.Unit lambda$onParentLongClick$3$sortsFragment$2(android.os.Bundle,com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence) -> k
 cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment$3 -> cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment$c:
     cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment,android.os.Looper):320:320 -> <init>
-    1:1:void lambda$handleMessage$0():328:328 -> a
+    1:1:void <init>(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment,android.os.Looper):321:321 -> <init>
+    1:1:void lambda$handleMessage$0():329:329 -> a
     void lambda$handleMessage$0$sortsFragment$3() -> b
-    1:1:void handleMessage(android.os.Message):323:323 -> handleMessage
-    2:5:void handleMessage(android.os.Message):331:334 -> handleMessage
-    6:6:void handleMessage(android.os.Message):336:336 -> handleMessage
-    7:7:void handleMessage(android.os.Message):338:338 -> handleMessage
-    8:8:void handleMessage(android.os.Message):328:328 -> handleMessage
-    9:9:void handleMessage(android.os.Message):325:325 -> handleMessage
-    10:10:void handleMessage(android.os.Message):341:341 -> handleMessage
+    1:1:void handleMessage(android.os.Message):324:324 -> handleMessage
+    2:5:void handleMessage(android.os.Message):332:335 -> handleMessage
+    6:6:void handleMessage(android.os.Message):337:337 -> handleMessage
+    7:7:void handleMessage(android.os.Message):339:339 -> handleMessage
+    8:8:void handleMessage(android.os.Message):329:329 -> handleMessage
+    9:9:void handleMessage(android.os.Message):326:326 -> handleMessage
+    10:10:void handleMessage(android.os.Message):342:342 -> handleMessage
 cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment_ViewBinding -> cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment_ViewBinding:
     cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment target -> b
     1:2:void <init>(cn.dreamn.qianji_auto.ui.fragment.base.sorts.sortsFragment,android.view.View):22:23 -> <init>
