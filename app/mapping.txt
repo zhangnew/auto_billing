@@ -1,11 +1,11 @@
 # compiler: R8
 # compiler_version: 2.1.86
 # min_api: 24
-# pg_map_id: 3360de7
+# pg_map_id: ad1a681
 # common_typos_disable
 $$ServiceLoaderMethods -> a:
-    java.util.Iterator $load$45535() -> a
-    java.util.Iterator $load$45540() -> b
+    java.util.Iterator $load$45550() -> a
+    java.util.Iterator $load$45555() -> b
 android.support.v4.app.INotificationSideChannel$Default -> android.support.v4.app.INotificationSideChannel$Default:
     1:1:void <init>():14:14 -> <init>
 android.support.v4.app.INotificationSideChannel$Stub -> android.support.v4.app.INotificationSideChannel$Stub:
@@ -47850,71 +47850,67 @@ cn.dreamn.qianji_auto.app.AppManager -> d.a.a.b.h:
     1:5:java.lang.String sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):44:48 -> f
     1:2:void setApp(java.lang.String):91:92 -> g
 cn.dreamn.qianji_auto.app.IApp -> d.a.a.b.i:
-    java.lang.String getAppName() -> a
-    void asyncDataBefore(android.content.Context) -> b
-    java.lang.String getPackPageName() -> c
-    int getAppIcon() -> d
-    java.lang.String getAsyncDesc() -> e
-    void asyncDataAfter(android.content.Context,android.os.Bundle) -> f
-    void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo) -> g
+    void asyncDataBefore(android.content.Context) -> a
+    int getAppIcon() -> b
+    java.lang.String getAsyncDesc() -> c
+    void asyncDataAfter(android.content.Context,android.os.Bundle) -> d
+    void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo) -> e
 cn.dreamn.qianji_auto.app.QianJi -> d.a.a.b.j:
     cn.dreamn.qianji_auto.app.QianJi qianJi -> a
     1:1:void <init>():31:31 -> <init>
-    java.lang.String getAppName() -> a
-    1:1:void asyncDataBefore(android.content.Context):80:80 -> b
-    2:8:void asyncDataBefore(android.content.Context):83:89 -> b
-    9:15:void asyncDataBefore(android.content.Context):91:97 -> b
-    java.lang.String getPackPageName() -> c
-    int getAppIcon() -> d
-    java.lang.String getAsyncDesc() -> e
-    1:1:void asyncDataAfter(android.content.Context,android.os.Bundle):104:104 -> f
-    2:2:void asyncDataAfter(android.content.Context,android.os.Bundle):106:106 -> f
-    3:3:void asyncDataAfter(android.content.Context,android.os.Bundle):108:108 -> f
-    4:4:void asyncDataAfter(android.content.Context,android.os.Bundle):113:113 -> f
-    5:5:void asyncDataAfter(android.content.Context,android.os.Bundle):125:125 -> f
-    6:6:void asyncDataAfter(android.content.Context,android.os.Bundle):121:121 -> f
-    1:1:void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):58:58 -> g
-    2:3:void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):70:71 -> g
-    4:4:void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):73:73 -> g
-    1:1:void delay(android.content.Context,android.os.Handler):220:220 -> h
-    1:3:cn.dreamn.qianji_auto.app.QianJi getInstance():35:37 -> i
-    1:2:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):252:253 -> j
-    3:3:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):255:255 -> j
-    4:5:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):259:260 -> j
-    6:7:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):262:263 -> j
-    8:9:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):265:266 -> j
-    10:10:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):268:268 -> j
-    11:11:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):270:270 -> j
-    12:13:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):272:273 -> j
-    14:15:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):276:277 -> j
-    16:17:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):279:280 -> j
-    18:19:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):282:283 -> j
-    20:20:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):285:285 -> j
-    1:14:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):126:139 -> k
-    15:15:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):141:141 -> k
-    16:17:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):146:147 -> k
-    18:18:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):150:150 -> k
-    19:19:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):153:153 -> k
-    20:20:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):157:157 -> k
-    21:25:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):159:163 -> k
-    26:26:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):165:165 -> k
-    27:27:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):168:168 -> k
-    28:36:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):170:178 -> k
-    37:37:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):180:180 -> k
-    38:38:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):184:184 -> k
-    39:39:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):186:186 -> k
-    void lambda$asyncDataBefore$0() -> l
-    1:1:void lambda$delay$5(android.content.Context,android.os.Handler):221:221 -> m
-    void lambda$delay$5$QianJi(android.content.Context,android.os.Handler) -> n
-    1:1:void lambda$null$2(android.content.Context,android.os.Handler):236:236 -> o
-    void lambda$null$2$QianJi(android.content.Context,android.os.Handler) -> p
-    1:5:void lambda$null$3(android.content.Context,long,android.os.Handler,java.lang.String):229:233 -> q
-    6:6:void lambda$null$3(android.content.Context,long,android.os.Handler,java.lang.String):235:235 -> q
-    void lambda$null$3$QianJi(android.content.Context,long,android.os.Handler,java.lang.String) -> r
-    1:4:void lambda$null$4(android.content.Context,android.os.Handler,java.lang.String):222:225 -> s
-    5:5:void lambda$null$4(android.content.Context,android.os.Handler,java.lang.String):228:228 -> s
-    6:6:void lambda$null$4(android.content.Context,android.os.Handler,java.lang.String):244:244 -> s
-    void lambda$null$4$QianJi(android.content.Context,android.os.Handler,java.lang.String) -> t
+    1:1:void asyncDataBefore(android.content.Context):80:80 -> a
+    2:8:void asyncDataBefore(android.content.Context):83:89 -> a
+    9:15:void asyncDataBefore(android.content.Context):91:97 -> a
+    int getAppIcon() -> b
+    java.lang.String getAsyncDesc() -> c
+    1:1:void asyncDataAfter(android.content.Context,android.os.Bundle):104:104 -> d
+    2:2:void asyncDataAfter(android.content.Context,android.os.Bundle):106:106 -> d
+    3:3:void asyncDataAfter(android.content.Context,android.os.Bundle):108:108 -> d
+    4:4:void asyncDataAfter(android.content.Context,android.os.Bundle):113:113 -> d
+    5:5:void asyncDataAfter(android.content.Context,android.os.Bundle):125:125 -> d
+    6:6:void asyncDataAfter(android.content.Context,android.os.Bundle):121:121 -> d
+    1:1:void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):58:58 -> e
+    2:3:void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):70:71 -> e
+    4:4:void sendToApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):73:73 -> e
+    1:1:void delay(android.content.Context,android.os.Handler):220:220 -> f
+    1:3:cn.dreamn.qianji_auto.app.QianJi getInstance():35:37 -> g
+    1:2:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):252:253 -> h
+    3:3:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):255:255 -> h
+    4:5:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):259:260 -> h
+    6:7:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):262:263 -> h
+    8:9:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):265:266 -> h
+    10:10:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):268:268 -> h
+    11:11:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):270:270 -> h
+    12:13:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):272:273 -> h
+    14:15:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):276:277 -> h
+    16:17:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):279:280 -> h
+    18:19:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):282:283 -> h
+    20:20:java.lang.String getQianJi(cn.dreamn.qianji_auto.bills.BillInfo):285:285 -> h
+    1:14:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):126:139 -> i
+    15:15:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):141:141 -> i
+    16:17:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):146:147 -> i
+    18:18:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):150:150 -> i
+    19:19:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):153:153 -> i
+    20:20:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):157:157 -> i
+    21:25:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):159:163 -> i
+    26:26:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):165:165 -> i
+    27:27:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):168:168 -> i
+    28:36:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):170:178 -> i
+    37:37:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):180:180 -> i
+    38:38:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):184:184 -> i
+    39:39:void lambda$asyncDataAfter$1(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,android.os.Handler):186:186 -> i
+    void lambda$asyncDataBefore$0() -> j
+    1:1:void lambda$delay$5(android.content.Context,android.os.Handler):221:221 -> k
+    void lambda$delay$5$QianJi(android.content.Context,android.os.Handler) -> l
+    1:1:void lambda$null$2(android.content.Context,android.os.Handler):236:236 -> m
+    void lambda$null$2$QianJi(android.content.Context,android.os.Handler) -> n
+    1:5:void lambda$null$3(android.content.Context,long,android.os.Handler,java.lang.String):229:233 -> o
+    6:6:void lambda$null$3(android.content.Context,long,android.os.Handler,java.lang.String):235:235 -> o
+    void lambda$null$3$QianJi(android.content.Context,long,android.os.Handler,java.lang.String) -> p
+    1:4:void lambda$null$4(android.content.Context,android.os.Handler,java.lang.String):222:225 -> q
+    5:5:void lambda$null$4(android.content.Context,android.os.Handler,java.lang.String):228:228 -> q
+    6:6:void lambda$null$4(android.content.Context,android.os.Handler,java.lang.String):244:244 -> q
+    void lambda$null$4$QianJi(android.content.Context,android.os.Handler,java.lang.String) -> r
 cn.dreamn.qianji_auto.app.QianJi$1 -> d.a.a.b.j$a:
     android.content.Context val$context -> a
     cn.dreamn.qianji_auto.bills.BillInfo val$billInfo -> b
@@ -48103,61 +48099,55 @@ cn.dreamn.qianji_auto.bills.BillTools -> d.a.a.c.h:
 cn.dreamn.qianji_auto.bills.Remark -> d.a.a.c.i:
     1:2:java.lang.String getRemarkTpl():25:26 -> a
 cn.dreamn.qianji_auto.bills.SendDataToApp -> d.a.a.c.j:
-    1:2:void call(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):47:48 -> a
-    3:3:void call(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):66:66 -> a
-    1:1:void callNoAdd(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):85:85 -> b
-    2:2:void callNoAdd(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):96:96 -> b
-    1:2:void checkCache(android.os.Handler,cn.dreamn.qianji_auto.bills.BillInfo):71:72 -> c
-    1:2:void end(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):242:243 -> d
-    3:3:void end(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):248:248 -> d
-    4:4:void end(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):245:245 -> d
-    1:2:java.lang.String getTimeout():103:104 -> e
-    1:1:void goApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):182:182 -> f
-    2:2:void goApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):188:188 -> f
-    1:3:void lambda$checkCache$0(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):73:75 -> g
-    4:4:void lambda$checkCache$0(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):78:78 -> g
-    1:4:void lambda$goApp$1(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):189:192 -> h
-    5:5:void lambda$goApp$1(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):194:194 -> h
-    1:1:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):206:206 -> i
-    2:2:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):209:209 -> i
-    3:8:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):211:216 -> i
-    9:9:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):218:218 -> i
-    10:10:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):220:220 -> i
-    11:14:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):224:227 -> i
-    15:17:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):231:233 -> i
-    18:19:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):235:236 -> i
-    1:1:void showFloat(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):154:154 -> j
-    2:5:void showFloat(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):156:159 -> j
-    6:11:void showFloat(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):163:168 -> j
-    12:12:void showFloat(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):170:170 -> j
-    13:13:void showFloat(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):172:172 -> j
-    14:15:void showFloat(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):174:175 -> j
-    1:1:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):130:130 -> k
-    2:5:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):132:135 -> k
-    6:8:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):140:142 -> k
-    9:10:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):146:147 -> k
-    1:3:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):111:113 -> l
-    4:4:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):116:116 -> l
-    5:5:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):118:118 -> l
-    6:6:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):120:120 -> l
-    7:7:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):122:122 -> l
-    8:9:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):124:125 -> l
+    1:2:void call(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):46:47 -> a
+    3:3:void call(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):65:65 -> a
+    1:1:void callNoAdd(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):84:84 -> b
+    2:2:void callNoAdd(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):95:95 -> b
+    1:2:void checkCache(android.os.Handler,cn.dreamn.qianji_auto.bills.BillInfo):70:71 -> c
+    1:2:void end(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):213:214 -> d
+    3:3:void end(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):219:219 -> d
+    4:4:void end(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):216:216 -> d
+    1:2:java.lang.String getTimeout():102:103 -> e
+    1:1:void goApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):153:153 -> f
+    2:2:void goApp(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):159:159 -> f
+    1:3:void lambda$checkCache$0(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):72:74 -> g
+    4:4:void lambda$checkCache$0(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):77:77 -> g
+    1:4:void lambda$goApp$1(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):160:163 -> h
+    5:5:void lambda$goApp$1(cn.dreamn.qianji_auto.bills.BillInfo,android.os.Handler,java.lang.String):165:165 -> h
+    1:1:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):177:177 -> i
+    2:2:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):180:180 -> i
+    3:8:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):182:187 -> i
+    9:9:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):189:189 -> i
+    10:10:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):191:191 -> i
+    11:14:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):195:198 -> i
+    15:17:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):202:204 -> i
+    18:19:void run(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):206:207 -> i
+    1:1:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):129:129 -> j
+    2:5:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):131:134 -> j
+    6:8:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):139:141 -> j
+    9:10:void showFloatByAlert(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):145:146 -> j
+    1:3:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):110:112 -> k
+    4:4:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):115:115 -> k
+    5:5:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):117:117 -> k
+    6:6:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):119:119 -> k
+    7:7:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):121:121 -> k
+    8:9:void showTip(android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):123:124 -> k
 cn.dreamn.qianji_auto.bills.SendDataToApp$1 -> d.a.a.c.j$a:
     android.content.Context val$context -> b
     cn.dreamn.qianji_auto.bills.BillInfo val$billInfo -> a
-    1:1:void <init>(android.os.Looper,cn.dreamn.qianji_auto.bills.BillInfo,android.content.Context):48:48 -> <init>
-    1:4:void handleMessage(android.os.Message):51:54 -> handleMessage
-    5:11:void handleMessage(android.os.Message):56:62 -> handleMessage
+    1:1:void <init>(android.os.Looper,cn.dreamn.qianji_auto.bills.BillInfo,android.content.Context):47:47 -> <init>
+    1:4:void handleMessage(android.os.Message):50:53 -> handleMessage
+    5:11:void handleMessage(android.os.Message):55:61 -> handleMessage
 cn.dreamn.qianji_auto.bills.SendDataToApp$2 -> d.a.a.c.j$b:
     android.content.Context val$context -> a
     cn.dreamn.qianji_auto.bills.BillInfo val$billInfo -> b
-    1:1:void <init>(android.os.Looper,android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):85:85 -> <init>
-    1:5:void handleMessage(android.os.Message):88:92 -> handleMessage
+    1:1:void <init>(android.os.Looper,android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):84:84 -> <init>
+    1:5:void handleMessage(android.os.Message):87:91 -> handleMessage
 cn.dreamn.qianji_auto.bills.SendDataToApp$3 -> d.a.a.c.j$c:
     android.content.Context val$context -> a
     cn.dreamn.qianji_auto.bills.BillInfo val$billInfo -> b
-    1:1:void <init>(android.os.Looper,android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):182:182 -> <init>
-    1:1:void handleMessage(android.os.Message):185:185 -> handleMessage
+    1:1:void <init>(android.os.Looper,android.content.Context,cn.dreamn.qianji_auto.bills.BillInfo):153:153 -> <init>
+    1:1:void handleMessage(android.os.Message):156:156 -> handleMessage
 cn.dreamn.qianji_auto.core.broadcast.-$$Lambda$XposedBroadcast$UD87YKsgUmIVDPAIicvRueGnpcc -> d.a.a.d.a.a:
     android.os.Handler f$0 -> a
     void onGet(cn.dreamn.qianji_auto.bills.BillInfo) -> a
@@ -48204,6 +48194,95 @@ cn.dreamn.qianji_auto.core.helper.AutoBillService -> cn.dreamn.qianji_auto.core.
     1:1:void onDestroy():29:29 -> onDestroy
     2:2:void onDestroy():31:31 -> onDestroy
     1:3:int onStartCommand(android.content.Intent,int,int):23:25 -> onStartCommand
+cn.dreamn.qianji_auto.core.hook.-$$Lambda$HookBase$iI_k5v67s0POUOvlobm4EwTFJXs -> d.a.a.d.b.a:
+    cn.dreamn.qianji_auto.core.hook.HookBase f$0 -> e
+cn.dreamn.qianji_auto.core.hook.HookBase -> cn.dreamn.qianji_auto.core.hook.HookBase:
+    1:2:void <clinit>():31:32 -> <clinit>
+    1:1:void <init>():29:29 -> <init>
+    2:2:void <init>():35:35 -> <init>
+    1:1:void lambda$init$0():96:96 -> a
+    void lambda$init$0$HookBase() -> b
+    1:1:void hook(java.lang.String,java.lang.String):43:43 -> hook
+    2:2:void hook(java.lang.String,java.lang.String):46:46 -> hook
+    3:4:void hook(java.lang.String,java.lang.String):50:51 -> hook
+    1:1:void hookMainInOtherAppContext():57:57 -> hookMainInOtherAppContext
+    2:2:void hookMainInOtherAppContext():68:68 -> hookMainInOtherAppContext
+    3:3:void hookMainInOtherAppContext():79:79 -> hookMainInOtherAppContext
+    1:2:void init():88:89 -> init
+    3:3:void init():91:91 -> init
+    4:4:void init():95:95 -> init
+    5:5:void init():101:101 -> init
+    6:6:void init():103:103 -> init
+cn.dreamn.qianji_auto.core.hook.HookBase$1 -> cn.dreamn.qianji_auto.core.hook.HookBase$1:
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.HookBase):57:57 -> <init>
+    1:4:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):60:63 -> afterHookedMethod
+cn.dreamn.qianji_auto.core.hook.HookBase$2 -> cn.dreamn.qianji_auto.core.hook.HookBase$2:
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.HookBase):68:68 -> <init>
+    1:4:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):71:74 -> afterHookedMethod
+cn.dreamn.qianji_auto.core.hook.HookList -> cn.dreamn.qianji_auto.core.hook.HookList:
+    1:1:void <init>():15:15 -> <init>
+    2:2:void <init>():13:13 -> <init>
+    3:6:void <init>():16:19 -> <init>
+    1:2:cn.dreamn.qianji_auto.core.hook.HookList getInstance():23:24 -> getInstance
+    3:3:cn.dreamn.qianji_auto.core.hook.HookList getInstance():26:26 -> getInstance
+    1:1:java.util.List getmListHook():30:30 -> getmListHook
+cn.dreamn.qianji_auto.core.hook.HookMain -> cn.dreamn.qianji_auto.core.hook.HookMain:
+    1:1:void <init>():9:9 -> <init>
+    1:2:void handleLoadPackage(de.robv.android.xposed.callbacks.XC_LoadPackage$LoadPackageParam):13:14 -> handleLoadPackage
+    3:3:void handleLoadPackage(de.robv.android.xposed.callbacks.XC_LoadPackage$LoadPackageParam):16:16 -> handleLoadPackage
+    4:6:void handleLoadPackage(de.robv.android.xposed.callbacks.XC_LoadPackage$LoadPackageParam):18:20 -> handleLoadPackage
+cn.dreamn.qianji_auto.core.hook.Utils -> cn.dreamn.qianji_auto.core.hook.Utils:
+    1:5:void <init>(android.content.Context,java.lang.ClassLoader,java.lang.String,java.lang.String):42:46 -> <init>
+    1:2:void compare(java.lang.String[]):182:183 -> compare
+    3:4:void compare(java.lang.String[]):187:188 -> compare
+    5:8:void compare(java.lang.String[]):190:193 -> compare
+    1:1:java.lang.String getAppName():50:50 -> getAppName
+    1:1:java.lang.ClassLoader getClassLoader():58:58 -> getClassLoader
+    1:1:android.content.Context getContext():62:62 -> getContext
+    1:1:java.lang.String getPackageName():54:54 -> getPackageName
+    1:2:int getVerCode():164:165 -> getVerCode
+    3:3:int getVerCode():167:167 -> getVerCode
+    1:2:java.lang.String getVerName():148:149 -> getVerName
+    3:3:java.lang.String getVerName():151:151 -> getVerName
+    1:2:void log(java.lang.String):113:114 -> log
+    3:3:void log(java.lang.String,boolean):124:124 -> log
+    4:8:void log(java.lang.String,boolean):126:130 -> log
+    1:2:java.lang.String readData(java.lang.String):76:77 -> readData
+    1:2:void send(android.os.Bundle):86:87 -> send
+    1:2:void send2auto(android.os.Bundle):103:104 -> send2auto
+    1:6:void sendBroadcast(java.lang.String,android.os.Bundle):134:139 -> sendBroadcast
+    1:1:void sendString(java.lang.String):91:91 -> sendString
+    2:6:void sendString(java.lang.String,java.lang.String):95:99 -> sendString
+    1:1:void writeData(java.lang.String,java.lang.String):66:66 -> writeData
+    2:2:void writeData(java.lang.String,java.lang.String):68:68 -> writeData
+    3:3:void writeData(java.lang.String,java.lang.String):70:70 -> writeData
+    4:4:void writeData(java.lang.String,java.lang.String):72:72 -> writeData
+cn.dreamn.qianji_auto.core.hook.app.auto.QianjiAuto -> d.a.a.d.b.b.a.a:
+    1:1:void <init>():27:27 -> <init>
+    1:1:java.lang.Integer getHookIndex():55:55 -> getHookIndex
+    1:1:void hookFirst():33:33 -> hookFirst
+cn.dreamn.qianji_auto.core.hook.app.qianji.DBHelper -> d.a.a.d.b.b.b.a:
+    android.database.sqlite.SQLiteDatabase db -> a
+    boolean isObj -> b
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):38:38 -> <init>
+    2:2:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):35:35 -> <init>
+    3:7:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):39:43 -> <init>
+    8:8:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):45:45 -> <init>
+    9:9:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):47:47 -> <init>
+    10:10:void <init>(android.database.sqlite.SQLiteDatabase):50:50 -> <init>
+    11:11:void <init>(android.database.sqlite.SQLiteDatabase):35:35 -> <init>
+    12:13:void <init>(android.database.sqlite.SQLiteDatabase):51:52 -> <init>
+    1:8:java.lang.String getAllTables():56:63 -> a
+    9:10:java.lang.String getAllTables():65:66 -> a
+    11:12:java.lang.String getAllTables():68:69 -> a
+    1:12:java.util.ArrayList getAsset(java.lang.String):95:106 -> b
+    13:13:java.util.ArrayList getAsset(java.lang.String):108:108 -> b
+    1:15:java.util.ArrayList getCategory(java.lang.String):73:87 -> c
+    16:16:java.util.ArrayList getCategory(java.lang.String):89:89 -> c
+    1:10:java.util.ArrayList getUserBook(java.lang.String):114:123 -> d
+    11:11:java.util.ArrayList getUserBook(java.lang.String):125:125 -> d
+    1:3:void finalize():150:152 -> finalize
+    4:4:void finalize():155:155 -> finalize
 cn.dreamn.qianji_auto.core.hook.app.qianji.Data -> cn.dreamn.qianji_auto.core.hook.app.qianji.Data:
     android.os.Bundle bundle -> e
     1:1:void <clinit>():33:33 -> <clinit>
@@ -48211,6 +48290,7 @@ cn.dreamn.qianji_auto.core.hook.app.qianji.Data -> cn.dreamn.qianji_auto.core.ho
     2:2:void <init>(android.os.Parcel):52:52 -> <init>
     3:3:void <init>(android.os.Parcel):54:54 -> <init>
     1:1:android.os.Bundle get():64:64 -> a
+    1:1:void set(android.os.Bundle):60:60 -> b
     1:1:void writeToParcel(android.os.Parcel,int):77:77 -> writeToParcel
 cn.dreamn.qianji_auto.core.hook.app.qianji.Data$1 -> cn.dreamn.qianji_auto.core.hook.app.qianji.Data$a:
     1:1:void <init>():33:33 -> <init>
@@ -48218,6 +48298,216 @@ cn.dreamn.qianji_auto.core.hook.app.qianji.Data$1 -> cn.dreamn.qianji_auto.core.
     1:1:cn.dreamn.qianji_auto.core.hook.app.qianji.Data[] newArray(int):43:43 -> b
     1:1:java.lang.Object createFromParcel(android.os.Parcel):33:33 -> createFromParcel
     1:1:java.lang.Object[] newArray(int):33:33 -> newArray
+cn.dreamn.qianji_auto.core.hook.app.qianji.QianjiHook -> d.a.a.d.b.b.b.b:
+    1:1:void <init>():26:26 -> <init>
+    1:1:java.lang.Integer getHookIndex():73:73 -> getHookIndex
+    1:1:void hookFirst():33:33 -> hookFirst
+    2:2:void hookFirst():35:35 -> hookFirst
+    3:3:void hookFirst():38:38 -> hookFirst
+    4:4:void hookFirst():40:40 -> hookFirst
+    5:5:void hookFirst():43:43 -> hookFirst
+    6:6:void hookFirst():45:45 -> hookFirst
+    7:7:void hookFirst():48:48 -> hookFirst
+    8:8:void hookFirst():50:50 -> hookFirst
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.-$$Lambda$LeftSide$eGw7XN7CumUxtqYgGY8byxXiMSo -> d.a.a.d.b.b.b.c.a:
+    android.content.Context f$0 -> e
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.AutoError -> d.a.a.d.b.b.b.c.b:
+    1:1:java.lang.String getSolvedUrl(java.lang.String):44:44 -> a
+    2:2:java.lang.String getSolvedUrl(java.lang.String):46:46 -> a
+    1:4:void init(cn.dreamn.qianji_auto.core.hook.Utils):15:18 -> b
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.AutoError$1 -> d.a.a.d.b.b.b.c.b$a:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    java.lang.Class val$WebViewActivity -> b
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):18:18 -> <init>
+    1:1:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):20:20 -> beforeHookedMethod
+    2:7:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):23:28 -> beforeHookedMethod
+    8:11:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):31:34 -> beforeHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.DataBase -> d.a.a.d.b.b.b.c.c:
+    android.database.sqlite.SQLiteDatabase db -> a
+    1:1:android.database.sqlite.SQLiteDatabase access$000():35:35 -> a
+    1:1:android.database.sqlite.SQLiteDatabase access$002(android.database.sqlite.SQLiteDatabase):35:35 -> b
+    1:2:void init(cn.dreamn.qianji_auto.core.hook.Utils):40:41 -> c
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.DataBase$1 -> d.a.a.d.b.b.b.c.c$a:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    java.lang.ClassLoader val$mAppClassLoader -> b
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils,java.lang.ClassLoader):41:41 -> <init>
+    1:2:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):44:45 -> beforeHookedMethod
+    3:6:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):49:52 -> beforeHookedMethod
+    7:8:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):54:55 -> beforeHookedMethod
+    9:9:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):60:60 -> beforeHookedMethod
+    10:10:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):62:62 -> beforeHookedMethod
+    11:11:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):64:64 -> beforeHookedMethod
+    12:12:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):66:66 -> beforeHookedMethod
+    13:13:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):68:68 -> beforeHookedMethod
+    14:14:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):70:70 -> beforeHookedMethod
+    15:15:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):73:73 -> beforeHookedMethod
+    16:16:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):77:77 -> beforeHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.DataBase$1$1 -> d.a.a.d.b.b.b.c.c$a$a:
+    cn.dreamn.qianji_auto.core.hook.app.qianji.DBHelper[] val$dbHelper -> a
+    cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.DataBase$1 this$0 -> c
+    java.lang.String val$finalUserId -> b
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.DataBase$1,cn.dreamn.qianji_auto.core.hook.app.qianji.DBHelper[],java.lang.String):77:77 -> <init>
+    1:4:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):79:82 -> beforeHookedMethod
+    5:5:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):84:84 -> beforeHookedMethod
+    6:6:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):88:88 -> beforeHookedMethod
+    7:7:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):90:90 -> beforeHookedMethod
+    8:10:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):93:95 -> beforeHookedMethod
+    11:13:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):99:101 -> beforeHookedMethod
+    14:17:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):103:106 -> beforeHookedMethod
+    18:18:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):109:109 -> beforeHookedMethod
+    19:20:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):111:112 -> beforeHookedMethod
+    21:21:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):114:114 -> beforeHookedMethod
+    22:22:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):118:118 -> beforeHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.LeftSide -> d.a.a.d.b.b.b.c.d:
+    1:4:void AddView(android.widget.LinearLayout,android.content.Context):49:52 -> a
+    5:6:void AddView(android.widget.LinearLayout,android.content.Context):54:55 -> a
+    7:7:void AddView(android.widget.LinearLayout,android.content.Context):57:57 -> a
+    8:10:void AddView(android.widget.LinearLayout,android.content.Context):60:62 -> a
+    11:13:void AddView(android.widget.LinearLayout,android.content.Context):64:66 -> a
+    14:14:void AddView(android.widget.LinearLayout,android.content.Context):75:75 -> a
+    15:15:void AddView(android.widget.LinearLayout,android.content.Context):77:77 -> a
+    16:21:void AddView(android.widget.LinearLayout,android.content.Context):79:84 -> a
+    22:27:void AddView(android.widget.LinearLayout,android.content.Context):86:91 -> a
+    28:29:void AddView(android.widget.LinearLayout,android.content.Context):94:95 -> a
+    30:31:void AddView(android.widget.LinearLayout,android.content.Context):97:98 -> a
+    32:32:void AddView(android.widget.LinearLayout,android.content.Context):100:100 -> a
+    33:34:void AddView(android.widget.LinearLayout,android.content.Context):102:103 -> a
+    35:35:void AddView(android.widget.LinearLayout,android.content.Context):105:105 -> a
+    1:3:void init(cn.dreamn.qianji_auto.core.hook.Utils):25:27 -> b
+    1:1:void lambda$AddView$0(android.content.Context,android.view.View):67:67 -> c
+    2:3:void lambda$AddView$0(android.content.Context,android.view.View):69:70 -> c
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.LeftSide$1 -> d.a.a.d.b.b.b.c.d$a:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):27:27 -> <init>
+    1:2:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):31:32 -> afterHookedMethod
+    3:3:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):34:34 -> afterHookedMethod
+    4:4:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):36:36 -> afterHookedMethod
+    5:5:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):38:38 -> afterHookedMethod
+    6:6:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):40:40 -> afterHookedMethod
+    7:7:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):42:42 -> afterHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.qianji.hooks.Timeout -> d.a.a.d.b.b.b.c.e:
+    1:1:void init(cn.dreamn.qianji_auto.core.hook.Utils):10:10 -> a
+cn.dreamn.qianji_auto.core.hook.app.wechat.Info$redPackage -> cn.dreamn.qianji_auto.core.hook.app.wechat.Info$redPackage:
+    java.util.HashMap hashMap -> a
+    1:1:void <clinit>():14:14 -> <clinit>
+    1:2:java.lang.String groups(cn.dreamn.qianji_auto.core.hook.Utils):68:69 -> a
+    1:1:java.util.List map(cn.dreamn.qianji_auto.core.hook.Utils):41:41 -> b
+    2:2:java.util.List map(cn.dreamn.qianji_auto.core.hook.Utils):43:43 -> b
+    1:2:java.lang.String money(cn.dreamn.qianji_auto.core.hook.Utils):48:49 -> c
+    1:2:java.lang.String remark(cn.dreamn.qianji_auto.core.hook.Utils):53:54 -> d
+    1:2:java.lang.String shop(cn.dreamn.qianji_auto.core.hook.Utils):58:59 -> e
+    1:2:java.lang.String status(cn.dreamn.qianji_auto.core.hook.Utils):63:64 -> f
+cn.dreamn.qianji_auto.core.hook.app.wechat.Info$redPackage$1 -> cn.dreamn.qianji_auto.core.hook.app.wechat.Info$redPackage$1:
+    1:1:void <init>():14:14 -> <init>
+    2:2:void <init>():16:16 -> <init>
+    3:3:void <init>():23:23 -> <init>
+    4:4:void <init>():30:30 -> <init>
+cn.dreamn.qianji_auto.core.hook.app.wechat.Wechat -> d.a.a.d.b.b.c.a:
+    1:1:void <init>():26:26 -> <init>
+    1:1:java.lang.Integer getHookIndex():77:77 -> getHookIndex
+    1:1:void hookFirst():32:32 -> hookFirst
+    2:2:void hookFirst():34:34 -> hookFirst
+    3:3:void hookFirst():36:36 -> hookFirst
+    4:4:void hookFirst():43:43 -> hookFirst
+    5:5:void hookFirst():45:45 -> hookFirst
+    6:6:void hookFirst():48:48 -> hookFirst
+    7:7:void hookFirst():50:50 -> hookFirst
+    8:8:void hookFirst():53:53 -> hookFirst
+    9:9:void hookFirst():55:55 -> hookFirst
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.-$$Lambda$Setting$1$rf7-3nikSXxO-BCfNgpDIcxXx5I -> d.a.a.d.b.b.c.b.a:
+    android.app.Activity f$0 -> e
+    cn.dreamn.qianji_auto.core.hook.Utils f$1 -> f
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.-$$Lambda$Setting$boQsdQIbYBotIxQIBuaM8lCSTfg -> d.a.a.d.b.b.c.b.b:
+    android.content.Context f$0 -> e
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.CheckHook -> d.a.a.d.b.b.c.b.c:
+    1:1:void init(cn.dreamn.qianji_auto.core.hook.Utils):10:10 -> a
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.LoginInfo -> d.a.a.d.b.b.c.b.d:
+    1:1:void init(cn.dreamn.qianji_auto.core.hook.Utils):13:13 -> a
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.LoginInfo$1 -> d.a.a.d.b.b.c.b.d$a:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):13:13 -> <init>
+    1:5:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):15:19 -> afterHookedMethod
+    6:9:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):21:24 -> afterHookedMethod
+    10:10:void afterHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):26:26 -> afterHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.RedPackage -> d.a.a.d.b.b.c.b.e:
+    1:1:void access$000(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):27:27 -> a
+    1:2:void hook801_802(java.lang.ClassLoader,cn.dreamn.qianji_auto.core.hook.Utils):42:43 -> b
+    3:3:void hook801_802(java.lang.ClassLoader,cn.dreamn.qianji_auto.core.hook.Utils):45:45 -> b
+    1:2:void hookmin800(java.lang.ClassLoader,cn.dreamn.qianji_auto.core.hook.Utils):55:56 -> c
+    3:3:void hookmin800(java.lang.ClassLoader,cn.dreamn.qianji_auto.core.hook.Utils):58:58 -> c
+    1:1:void init(cn.dreamn.qianji_auto.core.hook.Utils):29:29 -> d
+    2:2:void init(cn.dreamn.qianji_auto.core.hook.Utils):31:31 -> d
+    3:3:void init(cn.dreamn.qianji_auto.core.hook.Utils):34:34 -> d
+    4:4:void init(cn.dreamn.qianji_auto.core.hook.Utils):36:36 -> d
+    1:3:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):69:71 -> e
+    4:9:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):75:80 -> e
+    10:11:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):83:84 -> e
+    12:12:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):87:87 -> e
+    13:18:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):89:94 -> e
+    19:19:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):100:100 -> e
+    20:20:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):102:102 -> e
+    21:21:void setParam(de.robv.android.xposed.XC_MethodHook$MethodHookParam,cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):104:104 -> e
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.RedPackage$1 -> d.a.a.d.b.b.c.b.e$a:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    java.lang.Class val$qVar -> b
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):45:45 -> <init>
+    1:2:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):48:49 -> beforeHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.RedPackage$2 -> d.a.a.d.b.b.c.b.e$b:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    java.lang.Class val$qVar -> b
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils,java.lang.Class):58:58 -> <init>
+    1:1:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):61:61 -> beforeHookedMethod
+    2:2:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):63:63 -> beforeHookedMethod
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.Setting -> d.a.a.d.b.b.c.b.f:
+    1:1:void access$000(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):43:43 -> a
+    1:3:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):57:59 -> b
+    4:4:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):63:63 -> b
+    5:8:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):65:68 -> b
+    9:10:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):70:71 -> b
+    11:11:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):73:73 -> b
+    12:18:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):76:82 -> b
+    19:19:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):90:90 -> b
+    20:25:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):92:97 -> b
+    26:26:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):99:99 -> b
+    27:30:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):101:104 -> b
+    31:32:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):107:108 -> b
+    33:36:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):110:113 -> b
+    37:38:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):115:116 -> b
+    39:39:void doSettingsMenuInject(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):118:118 -> b
+    1:1:void init(cn.dreamn.qianji_auto.core.hook.Utils):45:45 -> c
+    1:1:void lambda$doSettingsMenuInject$0(android.content.Context,android.view.View):83:83 -> d
+    2:3:void lambda$doSettingsMenuInject$0(android.content.Context,android.view.View):85:86 -> d
+cn.dreamn.qianji_auto.core.hook.app.wechat.hooks.Setting$1 -> d.a.a.d.b.b.c.b.f$a:
+    cn.dreamn.qianji_auto.core.hook.Utils val$utils -> a
+    1:1:void <init>(cn.dreamn.qianji_auto.core.hook.Utils):45:45 -> <init>
+    1:1:void lambda$beforeHookedMethod$0(android.app.Activity,cn.dreamn.qianji_auto.core.hook.Utils):50:50 -> a
+    1:4:void beforeHookedMethod(de.robv.android.xposed.XC_MethodHook$MethodHookParam):47:50 -> beforeHookedMethod
+cn.dreamn.qianji_auto.core.hook.ui.ViewUtil -> d.a.a.d.b.c.a:
+    java.util.Comparator sYLocationLHCompator -> a
+    1:2:void <clinit>():77:78 -> <clinit>
+    1:3:android.view.View findViewByName(android.app.Activity,java.lang.String,java.lang.String[]):159:161 -> a
+    4:8:android.view.View findViewByName(android.app.Activity,java.lang.String,java.lang.String[]):165:169 -> a
+    9:9:android.view.View findViewByName(android.app.Activity,java.lang.String,java.lang.String[]):171:171 -> a
+    10:11:android.view.View findViewByName(android.app.Activity,java.lang.String,java.lang.String[]):173:174 -> a
+    12:12:android.view.View findViewByName(android.app.Activity,java.lang.String,java.lang.String[]):178:178 -> a
+    1:4:android.view.View findViewByText(android.view.View,java.lang.String[]):186:189 -> b
+    5:5:android.view.View findViewByText(android.view.View,java.lang.String[]):191:191 -> b
+    6:7:android.view.View findViewByText(android.view.View,java.lang.String[]):193:194 -> b
+    8:8:android.view.View findViewByText(android.view.View,java.lang.String[]):198:198 -> b
+    1:3:android.graphics.drawable.Drawable genBackgroundDefaultDrawable(int,int):151:153 -> c
+    1:2:void getChildViews(android.view.ViewGroup,int,java.util.List):339:340 -> d
+    3:4:void getChildViews(android.view.ViewGroup,int,java.util.List):344:345 -> d
+    5:6:void getChildViews(android.view.ViewGroup,int,java.util.List):347:348 -> d
+    1:2:void getChildViews(android.view.ViewGroup,java.lang.String,java.util.List):315:316 -> e
+    3:7:void getChildViews(android.view.ViewGroup,java.lang.String,java.util.List):320:324 -> e
+    8:10:void getChildViews(android.view.ViewGroup,java.lang.String,java.util.List):326:328 -> e
+    11:12:void getChildViews(android.view.ViewGroup,java.lang.String,java.util.List):331:332 -> e
+    1:3:int getViewYPosInScreen(android.view.View):389:391 -> f
+    1:1:void sortViewListByYPosition(java.util.List):385:385 -> g
+cn.dreamn.qianji_auto.core.hook.ui.ViewUtil$1 -> d.a.a.d.b.c.a$a:
+    1:1:void <init>():78:78 -> <init>
+    1:3:int compare(android.view.View,android.view.View):81:83 -> a
+    1:1:int compare(java.lang.Object,java.lang.Object):78:78 -> compare
 cn.dreamn.qianji_auto.database.AppDatabase -> cn.dreamn.qianji_auto.database.AppDatabase:
     androidx.room.migration.Migration MIGRATION_4_5 -> d
     androidx.room.migration.Migration MIGRATION_3_4 -> c
@@ -50124,337 +50414,83 @@ cn.dreamn.qianji_auto.ui.base.BaseFragment -> cn.dreamn.qianji_auto.ui.base.Base
     1:1:void onPause():82:82 -> onPause
     1:1:void onResume():76:76 -> onResume
     1:1:boolean onKeyDown(int,android.view.KeyEvent):88:88 -> s
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$0HacmIogeTmBYSDevxMQpMX_acI -> d.a.a.h.c.a:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$0P-Qz7pcEU3qzJNwTuSg9lvJTHg -> d.a.a.h.c.b:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$6CmpPbvhbpPnFJZ6qEag90fg2Jc -> d.a.a.h.c.c:
-    com.afollestad.materialdialogs.MaterialDialog f$2 -> g
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData f$1 -> f
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$8LjsxzvVBybB16vPBn3A52okjTk -> d.a.a.h.c.d:
-    android.os.Handler f$0 -> a
-    void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$DeqRxadW2RWR_EKgTZ2XkOb78R8 -> d.a.a.h.c.e:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$E2qRvdHCPlvog5Pd3qF5o0nQe0M -> d.a.a.h.c.f:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$GBpkVQskjOIqM0zXT7G0ON4vDlg -> d.a.a.h.c.g:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$GJKio6VwpYbONS0uWIrjCYXrkKs -> d.a.a.h.c.h:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$Gnz5hKwKj-RlOlKP2SvdgHsdVM0 -> d.a.a.h.c.i:
-    com.afollestad.materialdialogs.MaterialDialog f$3 -> h
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData f$1 -> f
-    com.google.android.material.textfield.TextInputEditText f$2 -> g
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$IQ1jiuHdg0HEJah1nQ6BYHr3IPw -> d.a.a.h.c.j:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$MfMBasqZruSkOoW6LyCYn8vnRyk -> d.a.a.h.c.k:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$OhhPIFhMVmGnynpN_hajxs1gb8c -> d.a.a.h.c.l:
-    android.os.Handler f$0 -> a
-    void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$QOkEfDJtzgMqXVWb-bAwO5lUYro -> d.a.a.h.c.m:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$Qfku5C9ehNr8NncdEz3Iygo61A0 -> d.a.a.h.c.n:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$QsncombPNE2Sx5ta1TlhOQBDHAA -> d.a.a.h.c.o:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$Vjk9rDF7IftRIpMRnLn22_ccbAQ -> d.a.a.h.c.p:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$_ZsfesvdJaviYqsb0yBP6GpLo28 -> d.a.a.h.c.q:
-    android.os.Handler f$0 -> a
-    void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$eWfcbfuVWS4bF6i_jgaQ2bgB0yU -> d.a.a.h.c.r:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    void onSelect(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$f_0ZDFN4Pm5BzpNoxI59Bali8ag -> d.a.a.h.c.s:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$gDtQ1S32WviWea1hADHZlmRKT5o -> d.a.a.h.c.t:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$muBy6QL95hMsR1qaG-bhs2SYSGw -> d.a.a.h.c.u:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> a
-    cn.dreamn.qianji_auto.bills.BillInfo f$1 -> b
-    void onGet(int) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$oCI94AcN1udJQdpiBF7BpGWCAyA -> d.a.a.h.c.v:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-    java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object) -> o
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$q5MSsYhEMK21paRy5Q05HvH4wzM -> d.a.a.h.c.w:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$vlYDH5Wtqj5ahBXZZgjehsR23RU -> d.a.a.h.c.x:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat$w14XwjK77DsW-GH2fDnfEntYZuQ -> d.a.a.h.c.y:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$2HLZkzYRGaFpf9YdjK5mGU0HKWw -> d.a.a.h.c.z:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$2HLZkzYRGaFpf9YdjK5mGU0HKWw -> d.a.a.h.c.a:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$4J7z8foqPK8Z8McdgUvgZTC9IUo -> d.a.a.h.c.a0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$4J7z8foqPK8Z8McdgUvgZTC9IUo -> d.a.a.h.c.b:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$4K2lcLZXiY7u7QM7MQwnhOQTnqU -> d.a.a.h.c.b0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$4K2lcLZXiY7u7QM7MQwnhOQTnqU -> d.a.a.h.c.c:
     com.afollestad.materialdialogs.MaterialDialog f$3 -> h
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
     com.google.android.material.textfield.TextInputEditText f$2 -> g
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2$InputData f$1 -> f
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$60C8qyiW3puVOgxyK4i_8oVUlXM -> d.a.a.h.c.c0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$60C8qyiW3puVOgxyK4i_8oVUlXM -> d.a.a.h.c.d:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$70nl_hEmkqgKt5irH-9t7BeCZQM -> d.a.a.h.c.d0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$70nl_hEmkqgKt5irH-9t7BeCZQM -> d.a.a.h.c.e:
     cn.dreamn.qianji_auto.bills.BillInfo f$1 -> b
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onGet(int) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$AHKWG_VpPMhJ30FiY6H28aAGJ7s -> d.a.a.h.c.e0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$AHKWG_VpPMhJ30FiY6H28aAGJ7s -> d.a.a.h.c.f:
     android.os.Handler f$0 -> a
     void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$DWb31Rn9HqD5TiJAfut5QiPPQWg -> d.a.a.h.c.f0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$DWb31Rn9HqD5TiJAfut5QiPPQWg -> d.a.a.h.c.g:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$Dl64vNIF2GXHfRlOmh3xCBAREig -> d.a.a.h.c.g0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$Dl64vNIF2GXHfRlOmh3xCBAREig -> d.a.a.h.c.h:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onSelect(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$EZcWG4LVbSt47HBRWiv2jxblaUk -> d.a.a.h.c.h0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$EZcWG4LVbSt47HBRWiv2jxblaUk -> d.a.a.h.c.i:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$MScv-iUG8vngUfiZDj5IKThJN2w -> d.a.a.h.c.i0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$MScv-iUG8vngUfiZDj5IKThJN2w -> d.a.a.h.c.j:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$ORrQjd-PovS-GIGE8rXIHYUkId4 -> d.a.a.h.c.j0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$ORrQjd-PovS-GIGE8rXIHYUkId4 -> d.a.a.h.c.k:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$QmvMWZVrHn8GS8NClixdzZtZ6x8 -> d.a.a.h.c.k0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$QmvMWZVrHn8GS8NClixdzZtZ6x8 -> d.a.a.h.c.l:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$RM5PmlFnieffotui2lTccXNmu30 -> d.a.a.h.c.l0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$RM5PmlFnieffotui2lTccXNmu30 -> d.a.a.h.c.m:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$XTG5_T4hI4wwkflAjmAubu1SXaQ -> d.a.a.h.c.m0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$XTG5_T4hI4wwkflAjmAubu1SXaQ -> d.a.a.h.c.n:
     android.os.Handler f$0 -> a
     void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$XoRz2dssQr7bt1artDfQRckU1P0 -> d.a.a.h.c.n0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$XoRz2dssQr7bt1artDfQRckU1P0 -> d.a.a.h.c.o:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$anrVujOcwvUgZHzSdk_hFbBgjRA -> d.a.a.h.c.o0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$anrVujOcwvUgZHzSdk_hFbBgjRA -> d.a.a.h.c.p:
     com.afollestad.materialdialogs.MaterialDialog f$2 -> g
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2$InputData f$1 -> f
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$azTcRuN9HjpAI0vvz8698Vy3nog -> d.a.a.h.c.p0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$azTcRuN9HjpAI0vvz8698Vy3nog -> d.a.a.h.c.q:
     android.os.Handler f$0 -> a
     void onGet(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$gDsukrrg0HFiy-Tk9kgg-VPqbAc -> d.a.a.h.c.q0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$gDsukrrg0HFiy-Tk9kgg-VPqbAc -> d.a.a.h.c.r:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$kCpZqpEZWxhpB-0jmY31L02G350 -> d.a.a.h.c.r0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$kCpZqpEZWxhpB-0jmY31L02G350 -> d.a.a.h.c.s:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$qs_TCuC19UUMrpnLHmlRyFbhBM4 -> d.a.a.h.c.s0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$qs_TCuC19UUMrpnLHmlRyFbhBM4 -> d.a.a.h.c.t:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
     java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object) -> o
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$r0Ff9TzuHjcSX6AgbWIKUSEf8wg -> d.a.a.h.c.t0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$r0Ff9TzuHjcSX6AgbWIKUSEf8wg -> d.a.a.h.c.u:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$vlMQhyhkg5nEE7-pBqjequKCXHM -> d.a.a.h.c.u0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$vlMQhyhkg5nEE7-pBqjequKCXHM -> d.a.a.h.c.v:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$wAVE0sWHxhuZajynGWu5K39_OwQ -> d.a.a.h.c.v0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$wAVE0sWHxhuZajynGWu5K39_OwQ -> d.a.a.h.c.w:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$wsmqJ-aYYF5-_2vtpoUUoqyJW8E -> d.a.a.h.c.w0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$wsmqJ-aYYF5-_2vtpoUUoqyJW8E -> d.a.a.h.c.x:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> a
     void onGet(android.os.Bundle) -> a
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$x29eVG3po6gz3RdgmZQELJ68tak -> d.a.a.h.c.x0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloat2$x29eVG3po6gz3RdgmZQELJ68tak -> d.a.a.h.c.y:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 f$0 -> e
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloatTip$CwBSL6Mz2cxjoL81h28XEIfBE8s -> d.a.a.h.c.y0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloatTip$CwBSL6Mz2cxjoL81h28XEIfBE8s -> d.a.a.h.c.z:
     cn.dreamn.qianji_auto.ui.floats.AutoFloatTip f$0 -> e
     com.tencent.mmkv.MMKV f$1 -> f
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloatTip$TOXJ1f0L37cDIct9lZIHFH4YMyo -> d.a.a.h.c.z0:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloatTip$TOXJ1f0L37cDIct9lZIHFH4YMyo -> d.a.a.h.c.a0:
     cn.dreamn.qianji_auto.ui.floats.AutoFloatTip f$0 -> e
     int f$1 -> f
-cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloatTip$y3avSDAXfldjTd89Q8aL40UzcM8 -> d.a.a.h.c.a1:
+cn.dreamn.qianji_auto.ui.floats.-$$Lambda$AutoFloatTip$y3avSDAXfldjTd89Q8aL40UzcM8 -> d.a.a.h.c.b0:
     cn.dreamn.qianji_auto.ui.floats.AutoFloatTip f$0 -> e
     com.tencent.mmkv.MMKV f$1 -> f
-cn.dreamn.qianji_auto.ui.floats.AutoFloat -> d.a.a.h.c.b1:
-    android.widget.ImageView iv_category -> x
-    android.widget.TextView tv_money -> r
-    android.widget.TextView tv_fee -> t
-    android.widget.TextView tv_book -> v
-    android.widget.Button button_next -> N
-    android.widget.LinearLayout ll_account2 -> F
-    android.widget.ImageView iv_account2 -> H
-    android.widget.LinearLayout layout_money -> q
-    cn.dreamn.qianji_auto.bills.BillInfo billInfo2 -> O
-    android.widget.TextView tv_type -> A
-    android.widget.TextView tv_account2 -> G
-    android.widget.LinearLayout ll_category -> w
-    android.widget.LinearLayout ll_book -> u
-    android.widget.LinearLayout ll_fee -> s
-    android.os.Handler mMainHandler -> p
-    android.widget.LinearLayout ll_time -> I
-    android.widget.TextView tv_category -> y
-    java.lang.String book_id -> P
-    android.widget.ImageView iv_account1 -> E
-    android.widget.LinearLayout ll_account1 -> C
-    android.widget.Button button_fail -> M
-    android.widget.TextView chip_bx -> B
-    android.widget.TextView tv_account1 -> D
-    android.widget.LinearLayout ll_remark -> K
-    android.widget.LinearLayout ll_type -> z
-    android.widget.TextView tv_time -> J
-    android.widget.TextView tv_remark -> L
-    1:1:void <init>(android.content.Context):130:130 -> <init>
-    2:2:void <init>(android.content.Context):72:72 -> <init>
-    3:3:void <init>(android.content.Context):121:121 -> <init>
-    4:4:void <init>(android.content.Context):131:131 -> <init>
-    1:1:void initData():135:135 -> A
-    1:5:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):354:358 -> B
-    6:6:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):360:360 -> B
-    7:7:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):362:362 -> B
-    8:9:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):364:365 -> B
-    10:10:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):367:367 -> B
-    11:11:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):374:374 -> B
-    12:12:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):381:381 -> B
-    13:14:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):383:384 -> B
-    15:15:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):386:386 -> B
-    16:17:void input(java.lang.String,java.lang.String,cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData):389:390 -> B
-    1:1:void lambda$initListener$1(android.view.View):201:201 -> C
-    void lambda$initListener$1$AutoFloat(android.view.View) -> D
-    1:1:void lambda$initListener$11(android.view.View):266:266 -> E
-    2:3:void lambda$initListener$11(android.view.View):271:272 -> E
-    4:4:void lambda$initListener$11(android.view.View):274:274 -> E
-    5:6:void lambda$initListener$11(android.view.View):284:285 -> E
-    7:7:void lambda$initListener$11(android.view.View):287:287 -> E
-    8:9:void lambda$initListener$11(android.view.View):290:291 -> E
-    void lambda$initListener$11$AutoFloat(android.view.View) -> F
-    1:2:void lambda$initListener$13(android.view.View):294:295 -> G
-    3:5:void lambda$initListener$13(android.view.View):305:307 -> G
-    6:6:void lambda$initListener$13(android.view.View):310:310 -> G
-    7:8:void lambda$initListener$13(android.view.View):319:320 -> G
-    9:9:void lambda$initListener$13(android.view.View):322:322 -> G
-    10:11:void lambda$initListener$13(android.view.View):325:326 -> G
-    void lambda$initListener$13$AutoFloat(android.view.View) -> H
-    1:2:void lambda$initListener$14(android.view.View):330:331 -> I
-    void lambda$initListener$14$AutoFloat(android.view.View) -> J
-    1:1:void lambda$initListener$15(android.view.View):333:333 -> K
-    void lambda$initListener$15$AutoFloat(android.view.View) -> L
-    1:2:void lambda$initListener$17(android.view.View):335:336 -> M
-    void lambda$initListener$17$AutoFloat(android.view.View) -> N
-    1:2:void lambda$initListener$3(android.view.View):209:210 -> O
-    void lambda$initListener$3$AutoFloat(android.view.View) -> P
-    1:2:void lambda$initListener$5(android.view.View):218:219 -> Q
-    void lambda$initListener$5$AutoFloat(android.view.View) -> R
-    1:2:void lambda$initListener$7(android.view.View):226:227 -> S
-    void lambda$initListener$7$AutoFloat(android.view.View) -> T
-    1:1:void lambda$initListener$8(android.view.View):234:234 -> U
-    void lambda$initListener$8$AutoFloat(android.view.View) -> V
-    1:1:void lambda$initListener$9(android.view.View):247:247 -> W
-    2:2:void lambda$initListener$9(android.view.View):252:252 -> W
-    void lambda$initListener$9$AutoFloat(android.view.View) -> X
-    1:1:void lambda$input$18(cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData,com.google.android.material.textfield.TextInputEditText,com.afollestad.materialdialogs.MaterialDialog,android.view.View):368:368 -> Y
-    2:3:void lambda$input$18(cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData,com.google.android.material.textfield.TextInputEditText,com.afollestad.materialdialogs.MaterialDialog,android.view.View):370:371 -> Y
-    void lambda$input$18$AutoFloat(cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData,com.google.android.material.textfield.TextInputEditText,com.afollestad.materialdialogs.MaterialDialog,android.view.View) -> Z
-    boolean canMoveOrTouch() -> a
-    1:1:void lambda$input$19(cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData,com.afollestad.materialdialogs.MaterialDialog,android.view.View):375:375 -> a0
-    2:3:void lambda$input$19(cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData,com.afollestad.materialdialogs.MaterialDialog,android.view.View):377:378 -> a0
-    1:2:void clear():518:519 -> b
-    void lambda$input$19$AutoFloat(cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData,com.afollestad.materialdialogs.MaterialDialog,android.view.View) -> b0
-    1:1:void dismiss():580:580 -> c
-    1:2:void lambda$null$0(android.os.Bundle):203:204 -> c0
-    void lambda$null$0$AutoFloat(android.os.Bundle) -> d0
-    1:1:kotlin.Unit lambda$null$10(com.afollestad.materialdialogs.MaterialDialog,java.util.Calendar):277:277 -> e0
-    2:2:kotlin.Unit lambda$null$10(com.afollestad.materialdialogs.MaterialDialog,java.util.Calendar):280:280 -> e0
-    1:1:android.view.WindowManager$LayoutParams getFloatViewLayoutParams():161:161 -> f
-    2:3:android.view.WindowManager$LayoutParams getFloatViewLayoutParams():163:164 -> f
-    4:4:android.view.WindowManager$LayoutParams getFloatViewLayoutParams():166:166 -> f
-    5:5:android.view.WindowManager$LayoutParams getFloatViewLayoutParams():169:169 -> f
-    6:6:android.view.WindowManager$LayoutParams getFloatViewLayoutParams():171:171 -> f
-    7:9:android.view.WindowManager$LayoutParams getFloatViewLayoutParams():177:179 -> f
-    kotlin.Unit lambda$null$10$AutoFloat(com.afollestad.materialdialogs.MaterialDialog,java.util.Calendar) -> f0
-    int getLayoutId() -> g
-    1:3:kotlin.Unit lambda$null$12(com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):311:313 -> g0
-    4:4:kotlin.Unit lambda$null$12(com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence):316:316 -> g0
-    kotlin.Unit lambda$null$12$AutoFloat(com.afollestad.materialdialogs.MaterialDialog,java.lang.Integer,java.lang.CharSequence) -> h0
-    1:2:void lambda$null$16(java.lang.String):337:338 -> i0
-    3:3:void lambda$null$16(java.lang.String):341:341 -> i0
-    4:4:void lambda$null$16(java.lang.String):345:345 -> i0
-    void lambda$null$16$AutoFloat(java.lang.String) -> j0
-    1:2:void initFloatView():189:190 -> k
-    1:3:void lambda$null$2(android.os.Bundle):211:213 -> k0
-    void lambda$null$2$AutoFloat(android.os.Bundle) -> l0
-    1:2:void lambda$null$20(android.os.Bundle):444:445 -> m0
-    void lambda$null$20$AutoFloat(android.os.Bundle) -> n0
-    1:1:void initListener():199:199 -> o
-    2:2:void initListener():208:208 -> o
-    3:3:void initListener():217:217 -> o
-    4:4:void initListener():225:225 -> o
-    5:5:void initListener():233:233 -> o
-    6:6:void initListener():246:246 -> o
-    7:7:void initListener():265:265 -> o
-    8:8:void initListener():293:293 -> o
-    9:9:void initListener():329:329 -> o
-    10:11:void initListener():333:334 -> o
-    1:2:void lambda$null$4(android.os.Bundle):220:221 -> o0
-    boolean isAdsorbView() -> p
-    void lambda$null$4$AutoFloat(android.os.Bundle) -> p0
-    1:2:void lambda$null$6(android.os.Bundle):228:229 -> q0
-    void lambda$null$6$AutoFloat(android.os.Bundle) -> r0
-    1:1:void lambda$setData$21(cn.dreamn.qianji_auto.bills.BillInfo,int):443:443 -> s0
-    void lambda$setData$21$AutoFloat(cn.dreamn.qianji_auto.bills.BillInfo,int) -> t0
-    1:1:void lambda$setData$22(android.os.Handler,java.lang.String):462:462 -> u0
-    2:4:void lambda$setData$22(android.os.Handler,java.lang.String):465:467 -> u0
-    1:1:cn.dreamn.qianji_auto.bills.BillInfo access$000(cn.dreamn.qianji_auto.ui.floats.AutoFloat):70:70 -> v
-    1:3:void lambda$setData$23(android.os.Handler,java.lang.String):483:485 -> v0
-    1:1:android.widget.ImageView access$100(cn.dreamn.qianji_auto.ui.floats.AutoFloat):70:70 -> w
-    1:3:void lambda$setData$24(android.os.Handler,java.lang.String):497:499 -> w0
-    1:1:android.widget.ImageView access$200(cn.dreamn.qianji_auto.ui.floats.AutoFloat):70:70 -> x
-    1:3:void setCheckable(boolean):612:614 -> x0
-    4:6:void setCheckable(boolean):616:618 -> x0
-    1:1:android.widget.ImageView access$300(cn.dreamn.qianji_auto.ui.floats.AutoFloat):70:70 -> y
-    1:1:void setData(cn.dreamn.qianji_auto.bills.BillInfo):396:396 -> y0
-    2:2:void setData(cn.dreamn.qianji_auto.bills.BillInfo):399:399 -> y0
-    3:12:void setData(cn.dreamn.qianji_auto.bills.BillInfo):401:410 -> y0
-    13:13:void setData(cn.dreamn.qianji_auto.bills.BillInfo):412:412 -> y0
-    14:15:void setData(cn.dreamn.qianji_auto.bills.BillInfo):415:416 -> y0
-    16:16:void setData(cn.dreamn.qianji_auto.bills.BillInfo):419:419 -> y0
-    17:18:void setData(cn.dreamn.qianji_auto.bills.BillInfo):423:424 -> y0
-    19:20:void setData(cn.dreamn.qianji_auto.bills.BillInfo):420:421 -> y0
-    21:21:void setData(cn.dreamn.qianji_auto.bills.BillInfo):427:427 -> y0
-    22:22:void setData(cn.dreamn.qianji_auto.bills.BillInfo):429:429 -> y0
-    23:23:void setData(cn.dreamn.qianji_auto.bills.BillInfo):432:432 -> y0
-    24:24:void setData(cn.dreamn.qianji_auto.bills.BillInfo):434:434 -> y0
-    25:25:void setData(cn.dreamn.qianji_auto.bills.BillInfo):437:437 -> y0
-    26:26:void setData(cn.dreamn.qianji_auto.bills.BillInfo):435:435 -> y0
-    27:27:void setData(cn.dreamn.qianji_auto.bills.BillInfo):441:441 -> y0
-    28:28:void setData(cn.dreamn.qianji_auto.bills.BillInfo):452:452 -> y0
-    29:29:void setData(cn.dreamn.qianji_auto.bills.BillInfo):461:461 -> y0
-    30:30:void setData(cn.dreamn.qianji_auto.bills.BillInfo):471:471 -> y0
-    31:31:void setData(cn.dreamn.qianji_auto.bills.BillInfo):473:473 -> y0
-    32:32:void setData(cn.dreamn.qianji_auto.bills.BillInfo):481:481 -> y0
-    33:33:void setData(cn.dreamn.qianji_auto.bills.BillInfo):487:487 -> y0
-    34:34:void setData(cn.dreamn.qianji_auto.bills.BillInfo):495:495 -> y0
-    35:35:void setData(cn.dreamn.qianji_auto.bills.BillInfo):503:503 -> y0
-    1:24:void bindView():523:546 -> z
-    1:19:void setVisible():585:603 -> z0
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$1 -> d.a.a.h.c.b1$a:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat,android.os.Looper):72:72 -> <init>
-    1:2:void handleMessage(android.os.Message):75:76 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$2 -> d.a.a.h.c.b1$b:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat):234:234 -> <init>
-    1:1:void onOK(java.lang.String):242:242 -> a
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$3 -> d.a.a.h.c.b1$c:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat):252:252 -> <init>
-    1:1:void onOK(java.lang.String):260:260 -> a
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$4 -> d.a.a.h.c.b1$d:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat,android.os.Looper):452:452 -> <init>
-    1:3:void handleMessage(android.os.Message):455:457 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$5 -> d.a.a.h.c.b1$e:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat,android.os.Looper):473:473 -> <init>
-    1:3:void handleMessage(android.os.Message):476:478 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$6 -> d.a.a.h.c.b1$f:
-    cn.dreamn.qianji_auto.ui.floats.AutoFloat this$0 -> a
-    1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat,android.os.Looper):487:487 -> <init>
-    1:3:void handleMessage(android.os.Message):490:492 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat$InputData -> d.a.a.h.c.b1$g:
-    void onOK(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2 -> d.a.a.h.c.c1:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2 -> d.a.a.h.c.c0:
     android.content.Context context -> a
     android.widget.Button button_next -> y
     android.widget.TextView tv_account2 -> r
@@ -50614,33 +50650,33 @@ cn.dreamn.qianji_auto.ui.floats.AutoFloat2 -> d.a.a.h.c.c1:
     1:2:void lambda$initListener$17(android.view.View):296:297 -> x
     void lambda$initListener$17$AutoFloat2(android.view.View) -> y
     1:2:void lambda$initListener$3(android.view.View):170:171 -> z
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$1 -> d.a.a.h.c.c1$a:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$1 -> d.a.a.h.c.c0$a:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat2,android.os.Looper):110:110 -> <init>
     1:2:void handleMessage(android.os.Message):113:114 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$2 -> d.a.a.h.c.c1$b:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$2 -> d.a.a.h.c.c0$b:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat2):195:195 -> <init>
     1:1:void onOK(java.lang.String):203:203 -> a
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$3 -> d.a.a.h.c.c1$c:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$3 -> d.a.a.h.c.c0$c:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat2):213:213 -> <init>
     1:1:void onOK(java.lang.String):221:221 -> a
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$4 -> d.a.a.h.c.c1$d:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$4 -> d.a.a.h.c.c0$d:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat2,android.os.Looper):413:413 -> <init>
     1:3:void handleMessage(android.os.Message):416:418 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$5 -> d.a.a.h.c.c1$e:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$5 -> d.a.a.h.c.c0$e:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat2,android.os.Looper):432:432 -> <init>
     1:3:void handleMessage(android.os.Message):435:437 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$6 -> d.a.a.h.c.c1$f:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$6 -> d.a.a.h.c.c0$f:
     cn.dreamn.qianji_auto.ui.floats.AutoFloat2 this$0 -> a
     1:1:void <init>(cn.dreamn.qianji_auto.ui.floats.AutoFloat2,android.os.Looper):446:446 -> <init>
     1:3:void handleMessage(android.os.Message):449:451 -> handleMessage
-cn.dreamn.qianji_auto.ui.floats.AutoFloat2$InputData -> d.a.a.h.c.c1$g:
+cn.dreamn.qianji_auto.ui.floats.AutoFloat2$InputData -> d.a.a.h.c.c0$g:
     void onOK(java.lang.String) -> a
-cn.dreamn.qianji_auto.ui.floats.AutoFloatTip -> d.a.a.h.c.d1:
+cn.dreamn.qianji_auto.ui.floats.AutoFloatTip -> d.a.a.h.c.d0:
     android.widget.TextView time -> s
     android.widget.TextView money -> r
     android.os.Handler mMainHandler -> p
@@ -53292,12 +53328,13 @@ cn.dreamn.qianji_auto.ui.theme.ThemeManager -> d.a.a.h.f.a:
     1:1:int getColor(android.content.Context,int):72:72 -> a
     1:2:int getColorRaw(int):75:76 -> b
     void init() -> c
-    1:1:boolean isLightColor(int):82:82 -> d
-    1:3:void setStatusBar(android.app.Activity,android.view.View,int):59:61 -> e
-    4:4:void setStatusBar(android.app.Activity,android.view.View,int):63:63 -> e
-    5:6:void setStatusBar(android.app.Activity,android.view.View,int):65:66 -> e
-    7:7:void setStatusBar(android.app.Activity,android.view.View,int):68:68 -> e
-    void setTheme() -> f
+    1:1:boolean isDarkMode(android.content.Context):88:88 -> d
+    1:1:boolean isLightColor(int):82:82 -> e
+    1:3:void setStatusBar(android.app.Activity,android.view.View,int):59:61 -> f
+    4:4:void setStatusBar(android.app.Activity,android.view.View,int):63:63 -> f
+    5:6:void setStatusBar(android.app.Activity,android.view.View,int):65:66 -> f
+    7:7:void setStatusBar(android.app.Activity,android.view.View,int):68:68 -> f
+    void setTheme() -> g
 cn.dreamn.qianji_auto.ui.utils.-$$Lambda$AutoBillWeb$3MIw0PQK79sXhuFO8y69gJ5Bx1A -> d.a.a.h.g.a:
     android.os.Handler f$2 -> g
     java.lang.String f$1 -> f
@@ -53869,23 +53906,23 @@ cn.dreamn.qianji_auto.ui.views.SuperText -> cn.dreamn.qianji_auto.ui.views.Super
     cn.dreamn.qianji_auto.ui.views.IconView icon_header -> e
     android.widget.TextView item_title -> g
     android.widget.TextView item_sub -> h
-    1:1:void <init>(android.content.Context,android.util.AttributeSet):22:22 -> <init>
-    2:7:void <init>(android.content.Context,android.util.AttributeSet):24:29 -> <init>
-    8:8:void <init>(android.content.Context,android.util.AttributeSet):31:31 -> <init>
-    9:16:void <init>(android.content.Context,android.util.AttributeSet):33:40 -> <init>
-    17:26:void <init>(android.content.Context,android.util.AttributeSet):42:51 -> <init>
-    27:27:void <init>(android.content.Context,android.util.AttributeSet):53:53 -> <init>
-    1:1:void setLeftIcon(java.lang.String):75:75 -> setLeftIcon
-    1:1:void setLeftIconColor(int):78:78 -> setLeftIconColor
-    1:1:void setOnClickListener(android.view.View$OnClickListener):61:61 -> setOnClickListener
-    1:1:void setRightIcon(java.lang.String):81:81 -> setRightIcon
-    1:1:void setRightIconColor(int):84:84 -> setRightIconColor
-    1:2:void setSelect(boolean):67:68 -> setSelect
-    3:3:void setSelect(boolean):70:70 -> setSelect
-    1:1:void setSub(java.lang.String):93:93 -> setSub
-    1:1:void setSubColor(int):96:96 -> setSubColor
-    1:1:void setTitle(java.lang.String):87:87 -> setTitle
-    1:1:void setTitleColor(int):90:90 -> setTitleColor
+    1:1:void <init>(android.content.Context,android.util.AttributeSet):20:20 -> <init>
+    2:7:void <init>(android.content.Context,android.util.AttributeSet):22:27 -> <init>
+    8:8:void <init>(android.content.Context,android.util.AttributeSet):29:29 -> <init>
+    9:16:void <init>(android.content.Context,android.util.AttributeSet):31:38 -> <init>
+    17:26:void <init>(android.content.Context,android.util.AttributeSet):40:49 -> <init>
+    27:27:void <init>(android.content.Context,android.util.AttributeSet):51:51 -> <init>
+    1:1:void setLeftIcon(java.lang.String):73:73 -> setLeftIcon
+    1:1:void setLeftIconColor(int):76:76 -> setLeftIconColor
+    1:1:void setOnClickListener(android.view.View$OnClickListener):59:59 -> setOnClickListener
+    1:1:void setRightIcon(java.lang.String):79:79 -> setRightIcon
+    1:1:void setRightIconColor(int):82:82 -> setRightIconColor
+    1:2:void setSelect(boolean):65:66 -> setSelect
+    3:3:void setSelect(boolean):68:68 -> setSelect
+    1:1:void setSub(java.lang.String):91:91 -> setSub
+    1:1:void setSubColor(int):94:94 -> setSubColor
+    1:1:void setTitle(java.lang.String):85:85 -> setTitle
+    1:1:void setTitleColor(int):88:88 -> setTitleColor
 cn.dreamn.qianji_auto.ui.views.TitleBar -> cn.dreamn.qianji_auto.ui.views.TitleBar:
     android.widget.RelativeLayout relativeLayout -> h
     cn.dreamn.qianji_auto.ui.views.IconView iv_right_icon -> f
