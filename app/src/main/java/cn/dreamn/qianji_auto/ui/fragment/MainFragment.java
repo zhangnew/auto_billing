@@ -42,10 +42,13 @@ import com.tencent.mmkv.MMKV;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xpage.enums.CoreAnim;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import cn.dreamn.qianji_auto.BuildConfig;
 import cn.dreamn.qianji_auto.R;
 import cn.dreamn.qianji_auto.app.AppManager;
+import cn.dreamn.qianji_auto.app.QianJi;
 import cn.dreamn.qianji_auto.core.broadcast.AppBroadcast;
 import cn.dreamn.qianji_auto.data.data.Data;
 import cn.dreamn.qianji_auto.data.database.Helper.BookNames;
@@ -394,6 +397,10 @@ public class MainFragment extends BaseFragment {
             //TODO 4.0新增功能，从支付宝微信等位置导出账单，再从钱迹导出账单，最后比对缺少的账单信息，进行高亮展示，由用户选择合并更新。
         });
         rl_year.setOnClickListener(v -> {
+            if (!Objects.equals(AppManager.getApp(), QianJi.getInstance().getPackPageName())) {
+                ToastUtils.show(R.string.sui_no_support);
+                return;
+            }
             if (!DateUtils.afterDay("yyyy-MM-dd", "2021-12-01")) {
                 ToastUtils.show(R.string.wait);
                 return;
