@@ -102,11 +102,11 @@ dependencies {
     implementation "com.github.xiaofeidev:round:1.1.1"
 
     //安卓Room数据库
-    def room_version = '2.3.0'
+    def room_version = '2.4.3'
 
     //noinspection GradleDependency
     implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:2.3.0"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
 
     // optional - RxJava support for Room
     //noinspection GradleDependency
