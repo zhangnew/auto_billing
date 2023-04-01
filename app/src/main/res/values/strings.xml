@@ -98,10 +98,9 @@
     <string name="mode_xp" translatable="false">Xposed模式</string>
     <string name="mode_helper" translatable="false">无障碍模式</string>
     <string name="qianji_async_desc" translatable="false">🧚‍♀️你可以一键将钱迹中的「资产」、「账本」、「分类」等数据同步到自动记账，期间手机会跳转到钱迹，完成同步后将自动跳回本页面。 \n\n❗❗❗️ 同步前，请将钱迹从多任务页面划掉，确保开启所有权限，并将钱迹加入Xposed模块作用域中。</string>
-    <string name="qianji_async_no_support" translatable="false">钱迹只支持Xposed用户同步，无障碍用户需要手动配置。</string>
-    <string name="sui_async_desc" translatable="false">🧚‍♀️随手记暂时不支持同步。</string>
-    <string name="sui_async_no_support" translatable="false">随手记暂时不支持同步。</string>
-    <string name="sui_no_support" translatable="false">随手记暂时不支持此功能</string>
+    <string name="async_no_support" translatable="false">%s只支持Xposed用户同步，无障碍用户需要手动配置。</string>
+    <string name="mymoney_async_desc" translatable="false">🧚‍♀️你可以一键将随手记中的「资产」数据同步到自动记账(「账本」、「分类」尚未实现)，期间手机会跳转到钱迹，完成同步后将自动跳回本页面。 \n\n❗❗❗️ 同步前，请将钱迹从多任务页面划掉，确保开启所有权限，并将钱迹加入Xposed模块作用域中。</string>
+    <string name="mymoney_no_support" translatable="false">随手记暂时不支持此功能</string>
     <string name="help_5_title" translatable="false">使用习惯</string>
     <string name="help_5_desc" translatable="false">让自动记账更熟悉你。</string>
     <string name="lineLay_none" translatable="false"> </string>
@@ -314,7 +313,7 @@
     <string name="regular_test" translatable="false">测试规则</string>
     <string name="regular_error" translatable="false">没有任何规则有效！</string>
     <string name="js_error" translatable="false">JS脚本执行出错，建议前去日志查看错误信息。</string>
-    <string name="not_support" translatable="false">钱迹只支持已激活Xposed用户同步，无障碍用户需要手动配置。</string>
+    <string name="not_support" translatable="false">%s只支持已激活Xposed用户同步，无障碍用户需要手动配置。</string>
     <string name="mode_helper_name" translatable="false">无障碍</string>
     <string name="float_tip" translatable="false">请授予悬浮窗权限！</string>
     <string name="notice_name" translatable="false">记账提醒</string>

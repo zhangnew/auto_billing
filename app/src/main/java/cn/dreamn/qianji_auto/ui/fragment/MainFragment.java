@@ -49,6 +49,8 @@ import cn.dreamn.qianji_auto.BuildConfig;
 import cn.dreamn.qianji_auto.R;
 import cn.dreamn.qianji_auto.app.AppManager;
 import cn.dreamn.qianji_auto.app.QianJi;
+import cn.dreamn.qianji_auto.app.MyMoney;
+import cn.dreamn.qianji_auto.bills.BillInfo;
 import cn.dreamn.qianji_auto.core.broadcast.AppBroadcast;
 import cn.dreamn.qianji_auto.data.data.Data;
 import cn.dreamn.qianji_auto.data.database.Helper.BookNames;
@@ -393,12 +395,19 @@ public class MainFragment extends BaseFragment {
 
 
         rl_bill_check.setOnClickListener(v -> {
+            // test mymoney
+            BillInfo billInfo = new BillInfo();
+            billInfo.setMoney("1.00");
+            billInfo.setRemark("备注测试");
+            billInfo.setAccountName("accountName");
+            billInfo.setBookName("bookName");
+            MyMoney.getInstance().sendToApp(getContext(), billInfo);
             ToastUtils.show(R.string.wait);
             //TODO 4.0新增功能，从支付宝微信等位置导出账单，再从钱迹导出账单，最后比对缺少的账单信息，进行高亮展示，由用户选择合并更新。
         });
         rl_year.setOnClickListener(v -> {
             if (!Objects.equals(AppManager.getApp(), QianJi.getInstance().getPackPageName())) {
-                ToastUtils.show(R.string.sui_no_support);
+                ToastUtils.show(R.string.mymoney_no_support);
                 return;
             }
             if (!DateUtils.afterDay("yyyy-MM-dd", "2021-12-01")) {

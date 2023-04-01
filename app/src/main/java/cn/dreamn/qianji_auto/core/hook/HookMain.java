@@ -6,6 +6,7 @@ import java.util.List;
 import cn.dreamn.qianji_auto.core.hook.core.hookBase;
 import cn.dreamn.qianji_auto.core.hook.hooks.alipay.Alipay;
 import cn.dreamn.qianji_auto.core.hook.hooks.auto.QianjiAuto;
+import cn.dreamn.qianji_auto.core.hook.hooks.mymoney.MyMoney;
 import cn.dreamn.qianji_auto.core.hook.hooks.notice.Notice;
 import cn.dreamn.qianji_auto.core.hook.hooks.qianji.Qianji;
 import cn.dreamn.qianji_auto.core.hook.hooks.qq.QQ;
@@ -29,6 +30,7 @@ public class HookMain implements IXposedHookLoadPackage {
         mHookList.add(Notice.getInstance());
       //  mHookList.add(Permission.getInstance());
         mHookList.add(QQ.getInstance());
+        mHookList.add(MyMoney.getInstance());
     }
 
 
