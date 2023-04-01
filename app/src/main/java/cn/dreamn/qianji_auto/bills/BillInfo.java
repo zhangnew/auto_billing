@@ -511,6 +511,7 @@ public class BillInfo {
         output += String.format("分类选择=%s\n", catechoose);
         output += String.format("账本名=%s\n", bookname);
         output += String.format("资产名1=%s\n", accountname);
+        output += String.format("资产id_1=%s\n", accountId1);
         output += String.format("资产名2=%s\n", accountname2);
         output += String.format("商户名=%s\n", shopAccount);
         output += String.format("商户备注=%s\n", shopRemark);
