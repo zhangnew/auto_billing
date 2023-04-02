@@ -119,12 +119,12 @@ public interface IApp {
                 HandlerUtil.send(mHandler, "（" + (i + 1) + "/" + category.size() + "）正在处理【分类数据】", 1);
                 JSONObject jsonObject1 = category.getJSONObject(i);
                 String name = jsonObject1.getString("name");
-                String icon = jsonObject1.getString("icon");
+                String icon = (String) jsonObject1.getOrDefault("icon", "https://pic.dreamn.cn/uPic/2021032310470716164676271616467627123WiARFwd8b1f5bdd0fca9378a915d8531cb740b.png");
                 String level = jsonObject1.getString("level");
                 String type = jsonObject1.getString("type");
                 String self_id = jsonObject1.getString("id");
                 String parent_id = jsonObject1.getString("parent");
-                String book_id = jsonObject1.getString("book_id");
+                String book_id = (String) jsonObject1.getOrDefault("book_id", "-1");
                 String sort = jsonObject1.getString("sort");
 
                 if (self_id == null || self_id.equals("")) {

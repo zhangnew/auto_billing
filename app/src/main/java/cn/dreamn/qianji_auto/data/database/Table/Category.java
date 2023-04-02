@@ -26,8 +26,8 @@ public class Category {
     public int id;
     public String name;//分类名
     public String icon;//分类图标
-    public String level;//分类等级
-    public String type;//类型
+    public String level;//分类等级 从 1 开始
+    public String type;//类型 0: 支出 1: 收入
     public String self_id;//钱迹中自己的id
     public String parent_id;//父类id
     public String book_id;//所属账本
