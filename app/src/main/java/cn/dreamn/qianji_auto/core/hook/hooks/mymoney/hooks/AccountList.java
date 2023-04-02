@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.HashSet;
+import java.util.List;
 
 import cn.dreamn.qianji_auto.app.MyMoney;
 import cn.dreamn.qianji_auto.core.broadcast.AppBroadcast;
@@ -25,32 +26,47 @@ public class AccountList {
 
         HashSet<String> accountList = new HashSet<>();
         final boolean[] hooked = {false};
+        final boolean[] accountHooked = {false};
         final Activity[] activity = {null};
 
         ClassLoader classLoader =  utils.getClassLoader();
-        Class<?> AccountVo = XposedHelpers.findClass(packageName + ".book.db.model.AccountVo", classLoader);
         Class<?> Activity = XposedHelpers.findClass(activityName, classLoader);
         Class<?> Cache = XposedHelpers.findClass(packageName + ".cache.AddTransDataCache$UpdateAccountBookCacheTask", classLoader);
-        XposedHelpers.findAndHookMethod(AccountVo, "b", double.class, new XC_MethodHook() {
-            protected void afterHookedMethod(MethodHookParam param) throws Throwable {
-                if (hooked[0]) return;
-                Double accountMoney = (Double) param.args[0];
-                String accountName = (String) AccountVo.getDeclaredField("c").get(param.thisObject);
-                long accountId = (long) AccountVo.getDeclaredField("b").get(param.thisObject);
-                double accountMoney2 = (double) AccountVo.getDeclaredField("h").get(param.thisObject);
-                if (accountMoney < accountMoney2) {
-                    accountMoney = accountMoney2;
+        Class<?> AddTransDataCache = XposedHelpers.findClass(packageName + ".cache.AddTransDataCache", classLoader);
+
+        // wBb = AccountListVo
+        XposedHelpers.findAndHookMethod(AddTransDataCache, "b", "wBb", new XC_MethodHook() {
+            protected void afterHookedMethod(MethodHookParam param) {
+                if (accountHooked[0]) return;
+                accountHooked[0] = true;
+                Object obj = param.args[0];
+                // accountListVo.h 包含隐藏账户
+                List<Object> accountListVo = (List<Object>) XposedHelpers.getObjectField(obj, "g");
+                for (Object o : accountListVo) {
+                    String accountName = (String) XposedHelpers.getObjectField(o, "c");
+                    long accountId = XposedHelpers.getLongField(o, "b");
+                    double accountMoney1 = XposedHelpers.getDoubleField(o, "j");
+                    double accountMoney2 = XposedHelpers.getDoubleField(o, "h");
+                    double accountMoney = Math.max(accountMoney1, accountMoney2);
+//                    String d = (String) XposedHelpers.getObjectField(o, "d"); // 货币种类: CNY, USD
+//                    String e = (String) XposedHelpers.getObjectField(o, "e"); // 同上
+//                    String k = (String) XposedHelpers.getObjectField(o, "k"); // 备注
+//                    String m = (String) XposedHelpers.getObjectField(o, "m"); // 图标名称
+                    utils.log("accountName=" + accountName + ", accountId=" + accountId + ", accountMoney=" + accountMoney);
+                    String account = accountId + "," + accountName + "," + accountMoney;
+                    accountList.add(account);
                 }
-//                utils.log("accountMoney=" + accountMoney + ", accountId=" + accountId + ", accountName=" + accountName);
-                String account = accountId + "," + accountName + "," + accountMoney;
-                accountList.add(account);
             }
         });
 
+        // afterHookedMethod 已经加载完成各种数据
         XposedHelpers.findAndHookMethod(Cache, "o", new XC_MethodHook() {
             @Override
             protected void afterHookedMethod(MethodHookParam param){
+                utils.log(appName + " hooked=" + hooked[0] + ", activity=" + activity[0]);
                 if (hooked[0]) return;
+                hooked[0] = true;
+                if (activity[0] == null) return; // 直接打开 App 而不是通过自动记账打开的，不处理
                 Intent intent = (Intent) XposedHelpers.callMethod(activity[0], "getIntent");
                 utils.log("intent=" + intent);
                 if (intent == null) return;
@@ -80,10 +96,10 @@ public class AccountList {
                     jsonObject.put("AutoSignal", AutoSignal);
                     utils.send2auto(jsonObject.toJSONString());
 
+                    // FIXME NPE Can't toast on a thread that has not called Looper.prepare()
                     Toast.makeText(utils.getContext(), appName + "数据信息获取完毕，现在返回自动记账。", Toast.LENGTH_LONG).show();
                     XposedHelpers.callMethod(activity[0], "finishAndRemoveTask");
                 }
-                hooked[0] = true;
             }
         });
 
