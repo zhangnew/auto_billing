@@ -25,6 +25,7 @@ public class AccountList {
         String activityName = myMoney.activityName;
 
         HashSet<String> accountList = new HashSet<>();
+        HashSet<String> categoryList = new HashSet<>();
         final boolean[] hooked = {false};
         final boolean[] accountHooked = {false};
         final Activity[] activity = {null};
@@ -52,7 +53,7 @@ public class AccountList {
 //                    String e = (String) XposedHelpers.getObjectField(o, "e"); // 同上
 //                    String k = (String) XposedHelpers.getObjectField(o, "k"); // 备注
 //                    String m = (String) XposedHelpers.getObjectField(o, "m"); // 图标名称
-                    utils.log("accountName=" + accountName + ", accountId=" + accountId + ", accountMoney=" + accountMoney);
+//                    utils.log("accountName=" + accountName + ", accountId=" + accountId + ", accountMoney=" + accountMoney);
                     String account = accountId + "," + accountName + "," + accountMoney;
                     accountList.add(account);
                 }
@@ -71,6 +72,19 @@ public class AccountList {
                 utils.log("intent=" + intent);
                 if (intent == null) return;
 
+                Object addTransDataCache = XposedHelpers.getObjectField(param.thisObject, "t");
+                List<Object> j = (List<Object>) XposedHelpers.getObjectField(addTransDataCache, "j");
+                if (j != null) {
+                    for (Object o : j) {
+                        getCategory(categoryList, o, "0", 1);
+                    }
+                }
+                List<Object> k = (List<Object>) XposedHelpers.getObjectField(addTransDataCache, "k");
+                if (k != null) {
+                    for (Object o : k) {
+                        getCategory(categoryList, o, "1", 1);
+                    }
+                }
                 int AutoSignal = intent.getIntExtra("AutoSignal", AppBroadcast.BROADCAST_NOTHING);
                 if (AutoSignal == AppBroadcast.BROADCAST_ASYNC) {
                     utils.log(appName + "收到同步信号:开始提取数据");
@@ -87,6 +101,17 @@ public class AccountList {
 //                            put("icon", "https://pic.dreamn.cn/uPic/2021032022075916162492791616249279427UY2ok6支付.png");
 //                            put("icon", "");
 //                            put("sort", 0);
+                        }});
+                    });
+                    categoryList.forEach(category -> {
+//                        utils.log("category=" + category);
+                        String[] categories = category.split(",");
+                        categorys.add(new JSONObject() {{
+                            put("name", categories[0]);
+                            put("id", categories[1]);
+                            put("parent", categories[2]);
+                            put("type", categories[3]);
+                            put("level", categories[4]);
                         }});
                     });
                     jsonObject.put("userBook", userBooks);
@@ -111,5 +136,20 @@ public class AccountList {
                 activity[0] = (Activity) param.thisObject;
             }
         });
+    }
+
+    public static void getCategory(HashSet<String> categoryList, Object category, String type, int level) {
+        String categoryName = (String) XposedHelpers.getObjectField(category, "c");
+//        String h = (String) XposedHelpers.getObjectField(category, "h"); // icon
+        long parentId = XposedHelpers.getLongField(category, "d");
+        long id = XposedHelpers.getLongField(category, "b");
+
+        List<Object> child = (List<Object>) XposedHelpers.getObjectField(category, "k");
+        if (child != null) {
+            for (Object o : child) {
+                getCategory(categoryList, o, type, level + 1);
+            }
+        }
+        categoryList.add(categoryName + "," + id + "," + parentId + "," + type + "," + level);
     }
 }
