@@ -55,13 +55,15 @@ public class MyMoney implements IApp {
             @Override
             public void handleMessage(@NonNull Message msg) {
                 if (msg.what == 0) {
-                    // TODO 设置账户和分类
                     Log.d("随手记记账", billInfo.dump());
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_SEND);
                     intent.putExtra("cost", Double.valueOf(billInfo.getMoney()));
+                    intent.putExtra("transType", Integer.valueOf(billInfo.getType()));
                     intent.putExtra("url_remark", billInfo.getRemark());
                     intent.putExtra("accountId", Long.valueOf(billInfo.getAccountId1()));
+//                    intent.putExtra("categoryId", Long.valueOf(billInfo.getCateName()));
+                    intent.putExtra("tradeTime", billInfo.getTimeStamp());
                     intent.setComponent(componentName);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
