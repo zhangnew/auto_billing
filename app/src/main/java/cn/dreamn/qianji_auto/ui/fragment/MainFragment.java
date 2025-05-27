@@ -395,12 +395,13 @@ public class MainFragment extends BaseFragment {
 
 
         rl_bill_check.setOnClickListener(v -> {
-            // test mymoney
+            // FIXME remote this: test mymoney
             BillInfo billInfo = new BillInfo();
             billInfo.setMoney("1.00");
             billInfo.setRemark("备注测试");
             billInfo.setAccountName("accountName");
             billInfo.setBookName("bookName");
+            billInfo.setType("1");
             MyMoney.getInstance().sendToApp(getContext(), billInfo);
             ToastUtils.show(R.string.wait);
             //TODO 4.0新增功能，从支付宝微信等位置导出账单，再从钱迹导出账单，最后比对缺少的账单信息，进行高亮展示，由用户选择合并更新。
