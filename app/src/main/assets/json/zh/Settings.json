@@ -95,6 +95,12 @@
       "value": "com.mutangtech.qianji",
       "sub": "官方推荐",
       "icon": "&#xe662;"
+    },
+    {
+      "name": "随手记",
+      "value": "com.mymoney",
+      "sub": "Beta测试版",
+      "icon": "&#xe662;"
     }
   ],
   [
